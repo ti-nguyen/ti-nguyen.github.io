@@ -9,6 +9,13 @@ a{
 ul{
 	list-style-type: none;
 }
+.author{
+	bottom:30px;
+	right: 30px;
+	position: fixed;
+	opacity: transparent;
+	z-index: 1000;
+}
 /*---------------------------------------------------------------------------------------------------*/
 /*Bat Dau Header*/
 .header{
