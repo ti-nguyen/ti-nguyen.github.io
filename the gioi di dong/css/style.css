@@ -1,0 +1,163 @@
+
+/*Set Thuoc Tinh Chung Cho Web___________*/
+*{
+	margin:0;
+	padding: 0;
+}
+
+body{
+	background: #b5f4ef;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style-type: none;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+/*Bat Dau Header ____________________*/
+.header{
+	max-width:1000px;
+	height:60px;
+	background: black;
+	border-radius: 10px;
+	margin: 0 auto;
+}
+.logo{
+	padding-left: 50px;	
+	height: 50px;
+	float: left;
+}
+.r{
+	width: 500px;	
+	float: right; /*De cho khoi' DIV cua thanh menu troi ve ben phai header*/
+	padding-top: 5px;
+
+}
+
+.menu a{
+	color: #aac8b2;
+}
+.menu li{
+	float: left; /*De lam cho menu can ve cung 1 dong thi fai cho vao the LI*/
+	height: 30px;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	line-height: 30px;
+	vertical-align: middle;  /*de cho dong chu dc can ra giua dong*/
+	max-width: 90px;
+
+}
+.menu li:hover{
+	background: #788acf;
+	color: yellow;
+	border-radius: 15px;
+	text-align: center;
+	transition: all 1.5s;	
+}
+.menu li:last-child{
+	padding-right: 40px;
+}
+
+/*------------------------------------------------------------------------------*/
+/*Bat Dau Content*/
+.content{
+	padding: 100px 20px;
+	margin: 0 auto;
+	width: 1300px;
+}
+.layout{
+	float: left; /*De lam cac san pham troi ve 1 dong*/
+	max-width: 300px;
+	min-width: 250px;
+	max-height: 300px;
+	min-height: 250px;
+	width:100%;
+	text-align: center;
+	border:1px solid #ddc7b9;
+	margin: 5px;
+	transition: all 2s; /*De sau khi ho ve cac hieu ung chay cham lai 2s*/
+}
+.layout img{
+	width: 280px;
+	height: 270px;
+}
+.layout:hover{
+	max-width: 400px;
+	background-color: #40c7c8;
+	transition: all 2s;
+	/*z-index: 2;*/
+	/*position: relative;*/
+}
+.layout h1 a:hover{
+	color: #ee0f43;
+	transition: all 1s;
+}
+
+
+
+
+/*------------------------------------------------------------------------------*/
+/*Nut Chat*/
+@keyframes tacgia{
+	/*25%{color: #0d0efc; background-color: #dee3f3;}
+	50%{color: #f03878; background-color: #fab6ce}*/
+	/*0%   {transform: translate(0px, 0px); }
+
+	25%  {transform: translate(30px, 0px);}
+
+	50%  {transform: translate(60px, 0px); }
+*/
+	75%  {transform: translate(100px, 0px); }
+
+/*	100% {transform: translate(0px, 0px);} */
+	}
+	#chat{
+		position: fixed;
+		bottom: 30px;
+		right: 142px;
+		max-width: 100px;
+
+		animation-name: tacgia;
+		animation-duration: 4s;
+		animation-iteration-count: infinite;
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
