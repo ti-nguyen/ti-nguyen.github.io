@@ -1,0 +1,248 @@
+*,ul,li{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: url(../images/bg4.jpg) top left no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+}
+.anima{
+	transition: linear 0.3s;
+	transition-delay: 0.2s;
+}
+
+
+
+/*----------------------------------------------------------------- */
+/*BẮT ĐẦU HEADER*/
+.header{
+	width: 100%;
+	background: rgba(100, 189, 187, 0.96) top left;
+	position: fixed;
+	z-index: 1000;
+}
+.w-header{
+	width: 75%;
+	margin: 0 auto;
+	height: 100px;
+}
+.header .logo{
+	width: 20%;
+	float: left;
+}
+.header .logo img{
+	width: 100px;
+}
+
+/*Làm menu chính*/
+.nav{
+	width: 80%;
+	float: right;
+}
+.nav ul,li,a{
+	list-style: none;
+	text-decoration: none;
+	
+}
+.nav a{
+	color:#F3F3F3;
+	font-size: 16px;
+}
+.nav >ul>li{
+	float: left;
+	position: relative;
+	padding: 5px 10px;
+	transition-delay: 0.3s;
+	transition: ease 1s;
+	width: 120px;
+}
+.menu{
+	line-height: 100px;
+	vertical-align: middle;
+}
+.nav>ul>li>ul{
+	display: none;
+	position: absolute;
+	background: rgba(100, 189, 187, 0.96);
+	line-height: 40px;
+}
+
+.nav>ul>li{
+	line-height: 100px;
+}
+.nav>ul>li:hover {
+	background: #0e5f6c;
+	transition-delay: 0.2s;
+	transition: ease 1s;
+}
+.nav >ul >li:hover >ul{
+	display: block;
+	width: 300px;
+	background: #0e5f6c;
+	color: black;
+	transition-delay: 0.2s;
+	transition: ease 1s;
+	margin-left: -10px;
+	z-index: 10;
+}
+.nav ul>li>ul>li>a{
+	padding-left: 20px;
+}
+
+.nav ul>li>ul>li:hover{
+	background: rgba(100, 189, 187, 0.96);
+	transition-delay: 0.2s;
+	transition: ease 1s;
+}
+.nav ul>li>ul>li{
+	position: relative;
+}
+.nav ul>li>ul>li>ul{
+	position: absolute;
+	display: none;
+	left: 100%;
+	top: 0;
+	width: 100%;
+}
+
+.nav ul>li>ul>li:hover >ul{
+	display: block;
+	background: #0e5f6c;	
+	z-index: 11;
+}
+
+
+
+
+.clear-left{
+	clear: both;
+}
+/*----------------------------------------------------------------- */
+/*BẮT ĐẦU MENU TRÁI*/
+.left-menu{
+	width: 10%;
+	height: 500px;
+	/*	background:  #DEEEF0 top left;*/
+	position: fixed;
+
+}
+/*----------------------------------------------------------------- */
+/*Banner*/
+.banner{
+	padding-top:100px;
+	width: 100%;
+	height: 950px;
+	background: url(../images/1.jpg) no-repeat;
+	background-size: 100%;
+}
+.banner-top{
+	width: 100%;
+	height: 83%;
+}
+.banner-bot{
+	width: 100%;
+	height: 17%;
+}
+.bb-left{
+	width: 50%;
+	float: left;
+}
+.bb-right{
+	width: 50%;
+	float: left;
+}
+
+
+
+
+
+/*----------------------------------------------------------------- */
+.wrap{
+	width: 75%;
+	background: rgba(215, 194, 211, 0.55);
+	margin: 0 auto;
+	height: 200px;
+
+}
+
+
+/*----------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------- */
+.search-tool{
+	width: 100%;
+	height:250px;
+	background: rgba(106, 184, 252, 0.97);
+}
+.top-search-tool{
+	width: 100%;
+	height: 70px;
+	line-height: 70px;
+}
+.tst-left,.tst-right{
+	width: 43%;
+	float: left;
+	height: 70px;
+	line-height: 70px;
+}
+.line{
+	border: 5px solid white;
+	margin-top: 40px;
+}
+.tst-mid{
+	width: 14%;
+	height: 70px;
+	float: left;
+	line-height: 70px;
+	text-align: center;
+	color: white;
+}
+.tst-mid h3{
+	font-weight: 700;
+	font-size: 36px;
+}
+
+
+
+
+/*----------------------------------------------------------------- */
+
+
+
+
+
+
+/*----------------------------------------------------------------- */
+
+
+
+
+
+
+/*----------------------------------------------------------------- */
+
+
+
+
+
+
+
+/*----------------------------------------------------------------- */
+
+
+
+
+
+
+
+

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>anh hung</title>
+    <script type="text/javascript">
+
+        //         * THỬ THÁCH LEVEL 1
+        //         * -----------------
+        //         * Khởi tạo thêm 3 biến để chứa thông tin về cấp độ (level),
+        //         * điểm kinh nghiệm (xp) và điểm kĩ năng (skillPoints).
+        //         * Giá trị khởi tạo của từng biến như sau:
+        //         * - Cấp độ: 1
+        //         * - Điểm kinh nghiệm: 0
+        //         * - Điểm kĩ năng: 5
+        var level, xp, sk, ten, phancap;
+        level = 1;
+        xp = 0;
+        sk = 5;
+        ten = 't';
+        phancap = "anh hung";
+
+        level = level + 1; // hoặc tương đương là level++;
+        xp = 150 * (level - 1); // sử dụng dấu ngoặc tròn để gom nhóm ưu tiên
+        sk = sk + xp / 10;
+
+        /* =========================================================
+         * | HÃY TỰ TAY CODE TRƯỚC KHI KÉO XUỐNG XEM CODE MẪU! |
+         * =========================================================
+         * THỬ THÁCH LEVEL 2
+         * -----------------
+         * Khởi tạo thêm 3 biến là strength, agility và intel.
+         * Sử dụng giá trị của điểm kĩ năng (skillPoints) phía trên
+         * và tính toán giá trị khởi tạo của các biến:
+         * - strength bằng 60% điểm kĩ năng cộng với 10% của điểm kinh nghiệm.
+         * - agility bằng 20% điểm kĩ năng cộng với 20% của điểm kinh nghiệm.
+         * - intel bằng 20% điểm kĩ năng cộng với 1000% của cấp độ.
+         * Sau khi tính toán xong, hãy xuất các chỉ số theo cú pháp:
+         * "Chỉ số strength của bạn là " + chỉ số
+         * =========================================================
+         * | HÃY TỰ TAY CODE TRƯỚC KHI KÉO XUỐNG XEM CODE MẪU! |
+         * =========================================================
+         */
+        var str, agi, int;
+        str = 0.6 * sk + 0.1 * xp;
+        agi = 0.2 * sk + 0.2 * xp;
+        int = 0.2 * sk + 10 * level;
+
+        document.write("Chỉ số strength của bạn là " + str);
+        level = level + 1; // hoặc tương đương là level++;
+        xp = xp * (level - 1) + 200; // sử dụng dấu ngoặc tròn để gom nhóm ưu tiên
+        sk = sk + xp / 10;
+
+        //ques 3
+        level = level + 1; // hoặc tương đương là level++;
+        xp = xp * (level - 1) + 300; // sử dụng dấu ngoặc tròn để gom nhóm ưu tiên
+        sk = sk + xp / 10;
+
+
+        /* =========================================================
+         * | HÃY TỰ TAY CODE TRƯỚC KHI KÉO XUỐNG XEM CODE MẪU! |
+         * =========================================================
+         * THỬ THÁCH LEVEL 4
+         * -----------------
+         * Sử dụng hàm prompt('Bạn muốn chọn phân cấp nào? a: Chiến
+         * Binh | b: Sát Thủ | c: Thợ Săn') để yêu cầu người
+         * dùng nhập vào 1 kí tự hoặc là a, hoặc b, hoặc c. Giá trị
+         * nhập vào sẽ được xử lý như sau:
+         * 1. Nếu là kí tự a:
+         * - Cập nhật phân cấp Anh Hùng (biến phancap): Chiến Binh.
+         * - Điều chỉnh chỉ số: strength +10, agility -10
+         * 2. Nếu là kí tự b:
+         * - Cập nhật phân cấp Anh Hùng (biến phancap): Sát Thủ.
+         * - Điều chỉnh chỉ số: strength -10, agility +5, intel +5
+         * 3. Nếu là kí tự c:
+         * - Cập nhật phân cấp Anh Hùng (biến phancap): Thợ Săn.
+         * - Điều chỉnh chỉ số: strength -10, intel +10
+         * 4. Nếu không phải 3 trường hợp trên
+         * - Không cập nhật và điều chỉnh gì cả.
+         * =========================================================
+         * | HÃY TỰ TAY CODE TRƯỚC KHI KÉO XUỐNG XEM CODE MẪU! |
+         * =========================================================
+         */
+        var checkname = prompt("Tên Anh Hùng của bạn là gì?");
+
+        if (checkname === ten) {
+            console.log('Chính xác! Bạn có trí nhớ rất tốt! intel +5!');
+            int = int + 5;
+        } else {
+            console.log('Tệ thật! Tên chính mình mà không nhớ sao?! intel -5!');
+            int = int - 5;
+        }
+        var a, b, c, chonclass;
+        chonclass = prompt("Bạn muốn chọn phân cấp nào? a: Chiến Binh | b: Sát Thủ | c: Thợ Săn");
+        a = 'Chiến Binh';
+        b = 'Sát Thủ';
+        c = 'Thợ Săn';
+        if (chonclass == 'a') {
+            phancap = 'Chiến Binh';
+        } else if (chonclass == 'b') {
+            phancap = 'Sát Thủ';
+        } else if (chonclass == 'c') {
+            phancap = 'Thợ Săn';
+        }
+        document.write("<br>Ban da chon class: " + phancap);
+
+
+        /* =========================================================
+         * | HÃY TỰ TAY CODE TRƯỚC KHI KÉO XUỐNG XEM CODE MẪU! |
+         * =========================================================
+         * THỬ THÁCH LEVEL 2
+         * -----------------
+         * Khởi tạo thêm 3 biến là strength, agility và intel.
+         * Sử dụng giá trị của điểm kĩ năng (skillPoints) phía trên
+         * và tính toán giá trị khởi tạo của các biến:
+         * - strength bằng 60% điểm kĩ năng cộng với 10% của điểm kinh nghiệm.
+         * - agility bằng 20% điểm kĩ năng cộng với 20% của điểm kinh nghiệm.
+         * - intel bằng 20% điểm kĩ năng cộng với 1000% của cấp độ.
+         * Sau khi tính toán xong, hãy xuất các chỉ số theo cú pháp:
+         * "Chỉ số strength của bạn là " + chỉ số
+         * =========================================================
+         * | HÃY TỰ TAY CODE TRƯỚC KHI KÉO XUỐNG XEM CODE MẪU! |
+         * =========================================================
+         *//* =========================================================
+         * | HÃY TỰ TAY CODE TRƯỚC KHI KÉO XUỐNG XEM CODE MẪU! |
+         * =========================================================
+         * THỬ THÁCH LEVEL 2
+         * -----------------
+         * Khởi tạo thêm 3 biến là strength, agility và intel.
+         * Sử dụng giá trị của điểm kĩ năng (skillPoints) phía trên
+         * và tính toán giá trị khởi tạo của các biến:
+         * - strength bằng 60% điểm kĩ năng cộng với 10% của điểm kinh nghiệm.
+         * - agility bằng 20% điểm kĩ năng cộng với 20% của điểm kinh nghiệm.
+         * - intel bằng 20% điểm kĩ năng cộng với 1000% của cấp độ.
+         * Sau khi tính toán xong, hãy xuất các chỉ số theo cú pháp:
+         * "Chỉ số strength của bạn là " + chỉ số
+         * =========================================================
+         * | HÃY TỰ TAY CODE TRƯỚC KHI KÉO XUỐNG XEM CODE MẪU! |
+         * =========================================================
+         *//* =========================================================
+         * | HÃY TỰ TAY CODE TRƯỚC KHI KÉO XUỐNG XEM CODE MẪU! |
+         * =========================================================
+         * THỬ THÁCH LEVEL 2
+         * -----------------
+         * Khởi tạo thêm 3 biến là strength, agility và intel.
+         * Sử dụng giá trị của điểm kĩ năng (skillPoints) phía trên
+         * và tính toán giá trị khởi tạo của các biến:
+         * - strength bằng 60% điểm kĩ năng cộng với 10% của điểm kinh nghiệm.
+         * - agility bằng 20% điểm kĩ năng cộng với 20% của điểm kinh nghiệm.
+         * - intel bằng 20% điểm kĩ năng cộng với 1000% của cấp độ.
+         * Sau khi tính toán xong, hãy xuất các chỉ số theo cú pháp:
+         * "Chỉ số strength của bạn là " + chỉ số
+         * =========================================================
+         * | HÃY TỰ TAY CODE TRƯỚC KHI KÉO XUỐNG XEM CODE MẪU! |
+         * =========================================================
+         *//* =========================================================
+         * | HÃY TỰ TAY CODE TRƯỚC KHI KÉO XUỐNG XEM CODE MẪU! |
+         * =========================================================
+         * THỬ THÁCH LEVEL 2
+         * -----------------
+         * Khởi tạo thêm 3 biến là strength, agility và intel.
+         * Sử dụng giá trị của điểm kĩ năng (skillPoints) phía trên
+         * và tính toán giá trị khởi tạo của các biến:
+         * - strength bằng 60% điểm kĩ năng cộng với 10% của điểm kinh nghiệm.
+         * - agility bằng 20% điểm kĩ năng cộng với 20% của điểm kinh nghiệm.
+         * - intel bằng 20% điểm kĩ năng cộng với 1000% của cấp độ.
+         * Sau khi tính toán xong, hãy xuất các chỉ số theo cú pháp:
+         * "Chỉ số strength của bạn là " + chỉ số
+         * =========================================================
+         * | HÃY TỰ TAY CODE TRƯỚC KHI KÉO XUỐNG XEM CODE MẪU! |
+         * =========================================================
+         */
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

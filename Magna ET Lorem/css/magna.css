@@ -14,3 +14,6 @@ body {
     opacity: transparent;
     z-index: 1000;
 }
+.author:before{
+    content: "\f219";
+}
