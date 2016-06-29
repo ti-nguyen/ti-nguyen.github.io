@@ -8,6 +8,7 @@ body{
 	background: url(../images/bg4.jpg) top left no-repeat;
 	background-size: 100%;
 	background-attachment: fixed;
+	height: 10000px;
 }
 .anima{
 	transition: linear 0.3s;
