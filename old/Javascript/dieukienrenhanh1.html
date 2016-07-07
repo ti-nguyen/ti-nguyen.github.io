@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dieu Kien Re Nhanh Phan 1</title>
+	<script type="text/javascript">
+		// - Bài 1. Sử dụng câu lệnh if để viết 1 hàm cho phép 2 tham số là number và tìm ra số lớn nhất trong 2 số đó.
+		function  bai1(a,b)
+		{
+			if(typeof a=="number" && typeof b=="number")
+			{
+				if((a-b)>0)
+				{
+					return("max la" +a);
+				}
+				else
+				{
+					return("max la " + b );
+				}
+			}
+			else
+			{
+				return("So ban vua nhap deo dung");
+			}
+		}
+
+		function b1(x)
+		{
+			var z = x;
+			var ar=[];
+			for (var i=0; i < z.length ; i++)
+			{
+				if(typeof z[i] == "number")
+				{
+					ar.push(z[i]);
+				}else
+				{
+					document.write(z[i]);
+				}
+				// if (typeof z[i] !== "number") {
+				// 	delete z[i];
+				
+			}
+			ar.sort(function (a,b){return a>b});
+			return ar;
+		}
+
+		function b5(x)
+		{
+			var num=x;
+			var mang=[];
+			if(typeof num == "object"){			
+				for(var i=0;i<num.length;i++)
+				{
+					if(typeof num[i] == "number")
+					{				
+						console.log(typeof num[i]);
+						mang.push(num[i]);
+					}	
+					else
+					{
+						console.log(num);
+						return num[i] + " ko fai la number";
+					}
+				}		
+				return mang;
+			}else
+			{
+				return "Du lieu vua nhap ko fai la 1 array";
+			}
+		}
+		// - Bài 2. Viết 1 hàm dùng để tính giai thừa của 1 số với tham số đầu vào là bất kỳ. Kiểm tra tham số đầu vào nếu không phải là number hoặc là number nhưng không phải là 1 số nguyên dương (số Integer > 0) thì hiển thị thông báo lỗi, ngược lại tính giai thừa và in ra kết quả.
+		var giaithua=1;
+		function bai2(n)
+		{
+			if(typeof n == "number" && n>0)
+			{
+				for(i=1;i<=n;i++)
+				{
+					giaithua*=i;
+				}
+				return giaithua;
+			}else
+			{
+				return("Ban deo nhap dung dieu kien");
+			}
+		}
+
+		// - Bài 3. Cho 1 mảng các số bất kỳ. Tạo ra 1 mảng mới chỉ chứa các số chẵn lấy ra từ mảng trên và sắp xếp theo thứ tự giảm dần.
+		// var mangbatky=[4,3,7,4,,4,9,0,3,6,9];
+		var mangmoi=[];
+		function duyetmang(arr)
+		{
+			for(var i=0;i<arr.length;i++)
+			{
+				if (arr[i]%2 == 0) 
+				{
+					mangmoi.push(arr[i]);
+				}
+			}
+			return mangmoi.sort(function(a,b){return (b-a)});
+		}
+		// - Bài 4. Một trang web cho phép người dùng tạo tài khoản. Hãy viết hàm kiểm tra tính hợp lệ của thông tin người dùng nhập vào.
+		// Giả sử tham số đầu vào là 1 object có dạng như sau (giá trị của thuộc tính là do người dùng nhập): 
+		// user = {
+		// 	username: "username",
+		// 	password: "secret",
+		// 	confirm: "secret"
+		// }
+		// Hãy kiểm tra username phải khác rỗng và không được vượt quá 20 ký tự, password phải có độ dài từ 6 đến 32 ký tự, confirm phải giống password.
+	
+		function bai4(username,password,confirm)
+		{
+			if (username.length>0 && username.length<=20 && password.length>=6 && password.length<=32 && password==confirm) 
+			{
+				alert ("Dang ki thanh cong");
+			}else if (username.length == 0) {
+				document.write("ko duoc de ten trong >> ");
+			}else if(username.length >20){
+				document.write("deo duoc nhap username dai hon 20 ki tu >> ");
+			}else if(password.length <6){
+				document.write("Pass ngan hon 6 ki tu >> ");
+			}else if(password.length >32){
+				document.write("Pass dai hon 32 ki tu >> ");
+			}else if(password !== confirm){
+				document.write("Nhap lai pass d dung >> ");
+			}
+		}
+
+	</script>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

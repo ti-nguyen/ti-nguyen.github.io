@@ -1,0 +1,291 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/*MAU #EEEEEE xam      #37B29D  xanh*/
+body{
+	background: #e8ecf0 url(http://www.csszengarden.com/220/i/denim2.png) 50% 350px;
+	background-attachment: fixed;
+	background-repeat: repeat;
+}
+.bg-word:before{
+	content: "Job Hunter";
+	position: fixed;
+	margin: auto;
+	right: 37%; 
+	font-weight: 900;
+	font-size:240px;
+	color: rgba(0, 0, 0, 0.4);
+	-webkit-transform: rotate(-90deg);
+	-webkit-mask-image: url(../image/bg2.png);
+	-o-mask-image: url(../image/bg2.png);
+	-moz-mask-image: url(../image/bg2.png);
+	mask-image: url(../image/bg2.png);
+}
+.wrap-content{
+	width: 1200px;
+	margin:0 auto;
+}
+.author{
+	position: fixed;Job
+	right: 30px;
+	bottom: 30px;
+	font-weight: 400;
+	animation: author-flow 10s ease infinite;
+	animation-direction:alternate-reverse;
+	transform: translate(-1000px,0px);
+}
+@keyframes author-flow{
+	
+}
+/*-----------------------------------------------------------------------*/
+.first-header{
+	text-align: right;
+	margin-right: 10%;
+	height: 40px;
+	line-height: 40px;
+	vertical-align: middle;
+	margin-top: 70px;
+}
+.first-header a{
+	font-weight: bold;
+	color: #337ab7;
+	transition:ease 0.5s;
+}
+.first-header a:hover{
+	color: #70dd66;
+	transition:ease 0.5s;
+}
+.header{
+	background:#15a267;
+}
+.nav-wid{
+	width: 100%;
+	height: 65px;
+	background-color: #0082bb;
+	box-shadow: 0px 2px 2px rgba(0,0,0,0.5); /*Đổ bóng cho nav-menu*/
+	position: fixed; /*Cho nav-menu cố định 1 vị trí với top và left*/
+	z-index: 100000; /*Hiển thị lớp trên cùng*/
+	top:0;
+}
+.nav{
+	width: 1400px;
+	margin:0 auto;
+	height: 65px;
+}
+.nav-logo{
+	width: 20%;
+	float: left;
+	height: 65px;
+}
+.nav-menu{
+	width: 900px;
+	float: right;
+	padding-left: 30px;
+	height: 65px;
+	margin: 0 auto;
+}
+.nav-logo img{
+	height: 65px;
+	padding-left: 40px;
+}
+.nav-menu ul{
+	list-style-type: none;
+}
+.nav-menu ul a{
+	text-decoration: none;
+	color: white;
+}
+.nav-menu ul li{
+	float: left;
+	padding-left: 40px;
+	padding-right: 40px;
+	line-height: 65px;
+	vertical-align: middle;
+	transition-delay: 0.3s;
+	transition: ease 0.8s;
+	text-align: center;
+}
+.nav-menu ul li:hover{
+	background: #4693ef;
+	transition: ease 0.7s;
+}
+
+
+/*-----------------------------------------------------------------------*/
+/*COMPANIES*/
+.companies-signup{
+	height: 100px;
+	background-color: #EEEEEE;
+	clear: left;
+}
+.float-content{
+	width: 1200px;
+	margin: 0 auto;
+}
+.wid-companies{
+	background:#eee;
+	height: 70px;
+	padding-top: 15px;
+	padding-bottom: 30px;
+	width: 60%;
+	float: left;
+}
+.wid-companies ul{
+	list-style-type: none;
+}
+.wid-companies img{
+	height: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 17px;
+}
+.wid-companies li{
+	float: left;
+}
+.wid-companies li:first-child{
+	padding-left: 5%;
+}
+.signup{
+	width: 40%;
+	height: 70px;
+	float: left;
+	padding-left: 12%;
+	padding-top: 1%;
+}
+.input-size{
+	width: 150px;
+	height: 30px;
+}
+.submit-info{
+	margin-top: 3%;
+	margin-right: 10%;
+	margin-left: 13%;
+}
+.signup input{
+	transition:ease 0.5s;
+}
+.signup input:hover{
+	background: #6ee264;
+	transition:ease 0.5s;	
+}
+.submit-info2{
+	margin-bottom: 2%;
+	padding-left: 22%;
+}
+/*-----------------------------------------------------------------------*/
+/*CONTENT*/
+/*-----------------------------------------------------------------------*/
+
+
+/*RECRUITER*/
+.recruiter{
+	width: 1200px;
+	margin:0 auto;
+	overflow-y: auto;
+	margin-top: 100px;
+}
+.left-content{
+	width: 70%;
+	height: 500px;
+	float: left;
+	background: red;
+}
+.right-content{
+	width: 30%;
+	height: 500px;
+	float: left;
+	background: yellow;
+}
+
+
+.image-content{
+	width: 50%;
+	height: 500px;
+	float: left;
+	background-color: grey;
+}
+.step-content{
+	width: 50%;
+	height: 500px;
+	float: left;
+	background-color: green;
+}
+.img-top{
+	height: 50%;
+	background-color: white;
+}
+.img-bot{
+	height:50%;
+	background-color: violet;
+}
+
+/*-------------------*/
+/*candidate*/
+.candidate{
+	width: 1200px;
+	margin:0 auto;
+	margin-top: 100px;
+	overflow-y: auto;
+}
+
+/*<!-- ----------------------------------------------------------------------------------------------------------------------------------------------- -->*/
+/*DANG KI MIEN PHI*/
+.start{
+	background: #019171;
+	clear: left;
+	margin-top: 100px;
+}
+.wid-start{
+	width: 1200px;
+	margin:0 auto;
+	text-align: center;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.wid-start h2{
+	font-weight: 200;
+	font-size: 35px;
+	color: white;	
+	padding-bottom: 60px;
+}
+.start-button{
+	padding: 15px 30px;
+	border: 1px solid white;
+	color: white;
+	font-weight: bold;
+	border-radius: 10px;
+	transition-delay: 0.2s;
+	transition: ease-in-out 0.5s;
+}
+.start-button:hover{
+	background: white;
+	transition: ease-in-out 0.5s;
+	color: #019171;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------*/

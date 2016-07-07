@@ -1,0 +1,466 @@
+
+body{
+	margin: 0 auto;
+	font-family: monospace;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style-type: none;
+}
+.author{
+	bottom:30px;
+	right: 30px;
+	position: fixed;
+	opacity: transparent;
+	z-index: 1000;
+}
+/*---------------------------------------------------------------------------------------------------*/
+/*Bat Dau Header*/
+.header{
+	width: 1000px;
+	height: 100px;
+	background-color: #feebfe;
+	margin: 0 auto;
+}
+
+.logo img{
+	padding-top: 15px;
+	padding-left: 20px;
+	float: left;
+}
+.khung-search{
+	width: 350px;
+	float:left; /*De cho khung search float left*/
+	padding-left: 50px;
+	line-height: 100px; /*de can chinh khung search ra giua div header*/
+	transform: scale(1.1);
+	transition: ease 1s;
+}
+.khung-search input:first-child{
+	width: 230px;
+	border-radius: 5px;
+	transform: scale(1.1);
+	transition: ease 1s;
+}
+.khung-search input:first-child:hover{
+	background-color: #91b769;
+	transition:  2s ease;
+}
+/*icon background*/-------------------------------------
+.field{
+	width: 400px;
+	float: left;
+	padding-top: 2px;
+	padding-left: 5px;
+}
+
+.icon-khoahoc,.icon-blog,.icon-duhoc,.icon-sosanh,.icon-muaban,.icon-nhanai,.icon-doisong,.icon-diendan,.icon-english,.icon-tuyensinh{
+	float: left;
+	height: 22px;
+	border-radius: 5px;
+	background: #98f8e5;
+	line-height: 22px;
+	box-shadow: 4px 4px 6px 0px rgba(107, 50, 50, 1);
+	margin-left: 8px;
+	margin-top: 3px;
+	padding-bottom: 2px;
+	padding-top: 2px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.icon-khoahoc a,.icon-blog a,.icon-duhoc a,.icon-sosanh a,.icon-muaban a,.icon-nhanai a,.icon-doisong a,.icon-diendan a,.icon-english a,.icon-tuyensinh a{
+	color: #1bb5d0;
+	transition-delay: 0.3s;
+	transition: ease 0.5s;
+}
+
+.field a:hover{
+	color: #53a36a;
+}
+/*---------------------------------------------------------------------------------------------------*/
+/*Bat dau Banner*/
+.banner{
+	max-width: 1000px;
+	height:100px;
+	margin:0 auto;
+}
+.bleft{
+	width: 500px;
+	height: 100px;
+	float: left;
+}
+.bright{
+	width: 499px;
+	height: 100px;
+	float: right;
+
+}
+.bleft img,.bright img{
+	width: 100%;
+	transition-delay: 0.3s;
+	transition: ease 0.5s;
+}
+.bleft img:hover,.bright img:hover{
+	transform: scale(1.1);
+	transition: ease 1s;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+/*Bat dau thanh NAVIGATIOn*/
+.khungnav{
+	background-image: url(https://dantri3.vcmedia.vn/App_Themes/Default/Images/allmenu.png); repeat ;
+	margin-bottom: 0;
+	height: 56px;
+}
+.thanhnav{
+	width: 1100px;
+	height: 27px;
+	margin: 0 auto;
+	padding: 0;
+}
+.menu{
+	height: 27px;
+	overflow: hidden;
+	margin: 0;
+}
+.menu li{
+	background-color: none;
+}
+.menu img{
+	width: 25px;
+}
+.menu a{
+	color: #fcdbf4;
+	font-size: 11px;
+}
+.menu li{
+	float: left;
+	text-align: center;
+	border-right:1px solid black;
+	padding-left:2px;
+	padding-right: 2px;
+	line-height: 30px;
+}
+.menu li a:hover{
+	color:#5cdd75;
+}
+
+
+.but{
+	float: left;
+	padding-top: 4px;
+	box-shadow: 0px 2px 2px 0px;
+	border-radius: 5px;
+	background-color: #a4f6b2; /*Dong SU Kien COLOR*/
+}
+.but a{
+	color: red;
+	font-weight: bold;
+}
+.sub-menu{
+	width: 1000px;
+	margin: auto;
+}
+.sub-menu ul li a{
+font-size: 12px;
+color: black;
+}
+.smenu{
+	height: 27px;
+	overflow: hidden;
+	margin: 0;
+}
+.smenu img{
+	width: 25px;
+}
+.smenu a{
+	color: #fcdbf4;
+	font-size: 11px;
+	padding-left:15px;
+	padding-right: 15px;
+}
+.smenu li{
+	float: left;
+	text-align: center;
+	
+	padding-right: 2px;
+	line-height: 30px;
+}
+.smenu li a:hover{
+	color:#5cdd75;
+}
+
+
+/*<!-- --------------------------------------------------------------------------------------------------- -->
+<!-- Bat dau CONTENT -->*/
+/*--------------------------------------------------------------layout 1*/
+.content{
+	width: 1000px;
+	height: 700px;
+	margin:0 auto;	
+}
+
+.layout1{
+	width: 650px;
+	height: 700px;
+	float: left;
+}
+.div1{
+	width: 350px;
+	height: 550px; 
+	float: left;
+}
+.div2{
+	width: 300px;
+	height: 550px;
+	float: left;
+}
+.div3{
+	clear: both;
+	height: 100px;
+}
+
+/*--chen noi dung layout 1*/
+.div1 div{
+	padding-left: 1px;
+	overflow: hidden;
+}
+.div1 img{
+	width: 99%;
+	border: 1px solid black;
+	text-align: center;
+	margin: 0 auto;
+	margin-left: 1px;
+	transition-delay: 0.3s;
+	transition: ease 0.5s;
+}
+.div1 img:hover{
+	transform: scale(1.2);
+	transition: ease 1.2s ;
+}
+.div1 h2{
+	text-align: justify;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.div1 h2 p{
+	text-align: justify;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.div1 a:hover{
+	color: #37e655;
+	transition: ease 1s;
+}
+
+/*----div2*/
+.div2 h2{
+	padding: 10px;
+	text-align: center;
+	line-height: 15px;
+	background-color: #c17889;
+	transition-delay: 0.3s;
+	transition: ease 0.5s;
+}
+.div2 a:hover, .div2 h2:hover{
+	color: #dcb2bc;
+	transition: ease 1.2s;
+	background-color: #ecd5da;
+}
+.div2 ul li a{
+	line-height: 14px;
+	font-size: 12px;
+	text-align:justify;
+}
+.div2 ul{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+/*-----div3*/
+.div3-1{
+	width: 33.333333%;
+	height: 100px;
+	float: left;
+}
+.div3-2{
+	width: 33.333333%;
+	height: 100px;
+	float: left;
+}
+.div3-3{
+	width: 33.333333%;
+	height: 100px;
+	float: left;
+}
+.div3left{
+	width: 50%;
+	height: 100px;
+	float: left;
+}	
+.div3left img{
+	width: 100%;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	transition-delay: 0.3s;
+	transition: ease 0.5s;
+}
+.div3left img:hover{
+	transform: scale(1.1);
+	transition: ease 1.2s;
+}
+.div3right{
+	width: 50%;
+	height: 100px;
+	float: left;
+}
+.div3right a{
+	color: #105478;
+
+}
+.div3right a:hover{
+	color: #5ab7e9;
+	transition: ease 1.2s;
+}
+.div3right h4{
+	padding-left: 3%;
+	padding-right: 3%;
+	text-align: justify;
+}
+
+
+/*--------------------------------------------------------------layout 2*/
+.layout2{
+	width: 350px;
+	height: 700px;
+	float: left;
+	vertical-align: middle;
+}
+.qc1{
+	height: 300px;
+	padding-left: 2%;
+	padding-top: 6%;
+}
+.qc2{
+	height: 150px;
+	padding-left: 2%;
+	padding-top: 6%;
+}
+.qc3{
+	height: 150px;
+	padding-left: 2%;
+	padding-top: 6%;
+}
+.qc1 img,.qc2 img,.qc3 img{
+	transition-delay: 0.3s;
+	transition: ease 0.5s;
+}
+.qc1 img:hover,.qc2 img:hover,.qc3 img:hover{
+	transform: scale(1.1);
+	transition: ease 0.5s;
+	transform: scale(1.1);
+	transition: ease 1s;
+}
+/*<!-- --------------------------------------------------------------------------------------------------- -->*/
+/*CONTENT 2- BANNER CUA VINHOMES*/
+.content2{
+	width: 1000px;
+	margin:0 auto;
+}
+.content2{
+	text-align: center;
+}
+.content2 img{
+	transition-delay: 0.3s;
+	transition: ease 0.5s;
+}
+.content2 img:hover{
+	transform: scale(1.1);
+	transition: ease 1s;
+}
+
+.content3{
+	width: 1000px;
+	height: 100%;
+	background-color: #dff2f9;
+	margin: 0 auto;
+}
+.c3left{
+	float: left;
+	width: 470px;
+	height: 1000px;
+	background-color: white;
+}
+.boxmenu h2{
+	margin: 0;  /*De cho the Box Menu ko bi qua to va cao*/
+	padding: 0;
+}
+.boxmenu li{
+	float: left;
+	border-right: 1px solid black;
+	height: 20px;
+	margin:0;
+	padding-left: 3px;
+	padding-right: 3px;
+	line-height: 25px;
+	margin-top: 20px;
+}
+.boxmenu li:first-child a{
+	color: white;
+}
+.boxmenu li:first-child{
+	background: #095b87;
+}
+/*----------New1*/
+.khungtintuc{
+	padding-top: 20px;
+	clear: left;
+}
+.anhtintuc{
+	width: 140px;
+	float: left;
+}
+.baiviet{
+	width: 330px;
+	float: left;
+	text-align: justify;
+}
+.linkslienquan{
+	clear: left;
+}
+
+.c3right{
+	float: left;
+	width: 510px;
+	height: 1000px;
+	background-color: white;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.adsleft{
+	width: 310px;
+	margin 0 auto;
+	float: left;
+}
+.adsright{
+	width: 160px;
+	margin: 0 auto;
+	float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

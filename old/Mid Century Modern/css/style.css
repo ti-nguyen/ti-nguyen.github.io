@@ -1,0 +1,541 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "ff-meta-web-pro", sans-serif;
+	font-size: 100%;
+	background: #f6efe5;
+	background-size: 60%;
+	color: #0d2c40;
+}
+
+/*------------------------------------------------------------------------*/
+/*LAM HEADER*/
+.header{
+	height: 750px;
+	background: #c879b2;
+
+}
+.left40{
+	width: 40%;
+	height: 750px;
+	float: left;
+}
+.l-left{
+	float: left;
+	color: white;
+}
+/*-------------------------------*/
+/*LAM PHAN BEN TRAI HEADER*/
+.l-left h2{
+	transform: rotate(-90deg);/*De lam chu xoay doc man hinh*/
+	margin-top: 100px;
+	margin-left: -50px;
+	font-size: 20px;
+	font-weight: 100;
+}
+.l-right{
+	float: right;
+	background: #0d2c40 url(http://www.csszengarden.com/221/icon-star.svg) no-repeat left bottom;
+	background-size: 100%;
+	width:50%;
+	height: 750px;
+	color: white;
+}
+.l-right h1{
+	font-weight: 200;
+	font-variant: small-caps;
+	text-align: justify;
+	padding-top: 40%;
+	padding-left: 10%;
+	padding-right: 10%;
+	font-size: 250%;
+}
+/*LAM PHAN BEN PHAI 60% HEADER*/
+.right60{
+	background: url(http://www.csszengarden.com/221/icons-3-pack.svg) no-repeat left bottom;
+	background-size: 100%;
+	float: left;
+	height: 750px;
+	width: 60%;
+}
+.right60 p{
+	padding-left: 8%;
+	color: white;
+}
+.right60 p:first-child{
+	margin-top: 10%;
+}
+.right60 p:last-child{
+	margin-top:3%;
+}
+.right60 p:last-child a{
+	color: white;
+	transition: ease-in-out 0.5s;
+}
+
+.right60 p:last-child a:hover{
+	color: grey;
+	transition: ease-in-out 0.5s;
+}
+
+/*------------------------------------------------------------------------*/
+/*BAT DAU CONTENT 1*/
+.content1{
+	background-color: #f6efe5;
+	height: 550px;
+}
+.c1-left{
+	width: 60%;
+	height: 550px;
+	padding:10% 5% 0 20%;
+	line-height: 30px;
+	font-weight: 150;
+	text-align: justify;
+	float: left;
+}
+.c1-left h2{
+	margin-bottom: 30px;
+}
+.c1-right{
+	width: 40%;
+	height: 550px;
+	float: left;
+}
+.c1-right-left{
+	width: 50%;
+	height: 550px;
+	background-color: #31C5DB;
+	float: left;
+}
+.c1-right-left p{
+	color: white;
+	line-height: 28px;
+	font-weight: 100;
+	padding: 45% 5% 0 6%;
+	text-align: justify;
+}
+/*------------------------------------------------------------------------*/
+/*BAT DAU CONTENT 2*/
+.content2{
+	background: url(http://www.csszengarden.com/221/mid-century-1.jpg) no-repeat top right;
+	height: 1200px;
+}
+/*-----C2-1----*/
+.c2-1{
+	height: 300px;
+}
+.c2-1-left{
+	width: 60%;
+	height: 300px;
+	float: left;
+}
+.c2-1-right{
+	width: 40%;
+	height: 300px;
+	float: left;
+	
+}
+.c2-1-r-left{
+	width: 50%;
+	height: 300px;
+	float: left;
+	
+}
+.c2-1-r-right{
+	width: 50%;
+	height: 300px;
+	float: le
+}
+.set-height-background{
+	height: 200px;
+	opacity: 0.8;
+	background-color: #31C5DB;	
+}
+
+/*-----C2-2----*/
+.c2-2{
+	height: 600px;
+	clear: left;
+
+}
+.c2-2-left{
+	width: 40%;
+	height: 600px;
+	background: #0d2c40 url(http://www.csszengarden.com/221/icon-half.svg) no-repeat right center; 
+	background-size: 50%;
+}
+.c2-2-l-d1{
+	width: 15%;
+	height: 600px;
+	float: left;
+}
+.c2-2-l-d1 h2{
+	transform: rotate(-90deg);/*De lam chu xoay doc man hinh*/
+	margin-top: 200%;
+	margin-left: -120%;
+	font-size: 30px;
+	font-weight: 100;
+	color: white;
+	width: 350px;
+}
+.c2-2-l-d2 {	
+	color: white;
+	padding-left: 20%;
+	padding-right: 30%;
+	text-align: justify;
+	padding-top: 20%;
+	line-height: 22px;
+}
+
+
+
+
+
+
+
+/*-----C2-3-------*/
+.c2-3{
+	height: 300px;
+	clear: left;
+}
+.c2-3-left{
+	width: 20%;
+	height: 300px;
+	float: left;
+}
+.c2-3-left ul{
+	list-style-type: none;
+	margin-top: 50%;
+	margin-left: 10%;
+}
+.c2-3-left a{
+	text-decoration: none;
+	line-height: 25px;
+	color: black;
+}
+
+
+
+.c2-3-middle{
+	width: 40%;
+	height: 300px;
+	float: left;
+}
+.c2-3-m-d1{
+	height: 220px;
+}
+.c2-3-m-d2{
+	background-color: #f6efe5;
+	height: 80px;
+	padding-top: 5%;
+	padding-left: 5%;
+}
+
+
+
+.c2-3-right{
+	width: 20%;
+	height:300px;
+	float:left;
+	background: #31C5DB url(http://www.csszengarden.com/221/icon-circles.svg) no-repeat right bottom;
+	background-size: 100%;
+	opacity: 0.8;
+}
+/*------------------------------------------------------------------------*/
+/*BAT DAU CONTENT 3*/
+.content3{
+	height: 700px;
+	
+}
+.c3-l{
+	width: 60%;
+	height: 700px;
+	float: left;
+}
+.c3-l p{
+	padding-left: 35%;
+	padding-right: 3%;
+	line-height: 25px;
+}
+.c3-r{
+	width: 20%;
+	float: left;
+	height: 700px;
+	z-index: 2;
+	background-color: #31C5DB;
+	opacity: 0.8;
+	padding-top: 8%;
+	padding-right: 1%;
+	padding-left: 1%;
+	line-height: 25px;
+
+}
+.c3-r p{
+	padding-top: 30px;
+}
+
+
+/*------------------------------------------------------------------------*/
+/*BAT DAU CONTENT 4*/
+.content4{
+	height: 750px;
+	z-index: 1;
+	position: relative;/*cho no abso vs thang wid ngoai de noi dung co the de len d2*/
+}
+.c4-l{
+	width: 5%;
+	height: 750px;
+	float: left;
+}
+.c4-m{
+	width: 35%;
+	float: left;
+	height: 750px;
+	background: url(http://www.csszengarden.com/221/mid-century-2.jpg) right bottom;
+	margin-top: 50px;
+	background-repeat: 2;
+	background-size: 100%;
+}
+.c4-m h2{
+	transform: rotate(-90deg);
+	font-size: 400%;
+	padding-top: 50%;
+	padding-left: 30%;
+}
+.c4-r{
+	width: 20%;
+	height: 750px;
+	float: left;
+
+}
+.c4-r1{
+	width: 25%;
+	height: 750px;
+	float: left;
+	z-index: 2;
+	position: absolute; /*cho no abso vs thang wid ngoai de noi dung co the de len d2*/
+	margin-left: 41%;
+	line-height: 25px;
+	margin-top: 5%;
+	text-align: justify;
+}
+.c4-r2{
+	width: 20%;
+	height: 230px;
+	z-index: 1;
+	float: left;
+
+	background-color: #31C5DB;
+	position: absolute;/*cho no abso vs thang wid ngoai de noi dung co the de len d2*/
+	margin-left: 60%;
+	opacity: 0.8;
+}
+.c4-r3{
+	width: 23%;
+	height: 750px;
+	z-index: 2;
+	float: left;
+	position: absolute;/*cho no abso vs thang wid ngoai de noi dung co the de len d2*/
+	margin-left: 75%;
+	line-height: 25px;
+	margin-top: 5%;
+	text-align: justify;
+}
+
+
+/*------------------------------------------------------------------------*/
+.content5{
+	background-color: #c879b2;
+	height: 1000px;
+	clear: left;
+	color: white;
+}
+.content5 h3{
+	font-size: 500%;
+}
+.c5-left{
+	width: 40%;
+	float: left;
+
+}
+.c5-l-left{
+	width: 50%;
+	font-size: 100%;
+	float: left;
+	padding-top: 70%;
+	padding-left: 5%;
+}
+.c5-l-right{
+	width: 50%;
+	height: 1000px;	
+	background-color: #0d2c40;
+	float: left;
+}
+.c5-lr-top{
+	height: 40%;
+}
+.c5-lr-mid{
+	padding-top: 15%;
+	padding-left: 10%;
+	height: 30%;
+}
+.c5-lr-bot{
+	padding-top: 15%;
+	padding-left: 10%;
+}
+/*content5-RIGHT*/
+.c5-right{
+	width: 60%;
+	height: 1000px;
+	float: left;
+}
+.c5-r-top{
+	height: 40%;
+}
+.c5-r-bot{
+	height: 60%;
+	clear: left;
+}
+.c5-r-orange{
+	width: 33.33333333333333333333%;
+	height: 100%;
+	background-color: #f15a30;
+	float: left;
+
+}
+.c5-r-lightblue{
+	width: 33.33333333333333333333%;
+	height: 100%;
+	background-color: #31c5da;
+	float: left;
+}
+.c5-r-d1{
+	height: 50%;
+	padding-top: 15%;
+	padding-left: 10%;
+}
+.c5-r-d2{
+	height: 50%;
+	padding-top: 15%;
+	padding-left: 10%;
+}
+
+
+/*------------------------------------------------------------------------*/
+/*CONTENT6*/
+.content6 a{
+	color: black;
+}
+.content61{
+	height: 400px;
+	clear: left;
+	background-color: #c879b2;
+}
+.content61 h2{
+
+	margin-top: 45%;
+	margin-left: 84%;
+	margin-bottom: 10%;
+
+	color: white;
+	transform: rotate(-90deg);
+}
+.content62 h2{
+	margin-top: 74%;
+	margin-left: 56%;
+	margin-bottom: 10%;
+	color: white;
+}
+.content61 ul{
+	list-style-type: none;
+	padding-top: 80%;
+	padding-left: 10%;
+	color: black;
+	font-weight: 100;
+	line-height: 25px;
+}
+.content62 ul{
+	list-style-type: none;
+	padding-top: 30%;
+	color: black;
+	padding-left: 10%;
+	font-weight: 100;
+	line-height: 25px;
+}
+.content62{
+	height: 600px;
+	clear: left;
+	background-color: #c879b2;
+}
+.c6-left{
+	width: 60%;
+	height: 400px;
+	float: left;
+	padding-left: 20%;
+}
+.c6-right{
+	width: 40%;
+	height: 400;
+	float: left;
+}
+.c6-r-left{
+	width: 50%;
+	height: 400px;
+	background: #31c5da;
+	background-size: 100%;
+}
+.c6-left2{
+	width: 60%;
+	height: 600px;
+	float: left;
+	transform: rotate(-90deg);
+}
+.c6-right2{
+	width: 40%;
+	height: 600px;
+	float: left;
+}
+.c6-r-left2{
+	width: 50%;
+	height: 600px;
+	background: #31c5da url(http://www.csszengarden.com/221/icon-circles.svg) no-repeat left bottom;
+	background-size: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
