@@ -8,7 +8,12 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
 body{
 	background: url(../images/bg4.jpg) no-repeat top left fixed;
 	background-size: cover;
@@ -24,6 +29,60 @@ body{
 .clearmargin{
 	margin-top:-100px;
 }
+
+
+
+.demo{
+	height: 60px;
+	margin: 0 auto;
+	/*	background: #c3bfb4;*/
+	width: 100%;
+}
+
+.demo-top{
+	margin:0 auto;
+	width: 100%;
+	height: 60px;
+	background: #306a5d;
+}
+.demo-bot{
+	width: 100%;
+	height: 60px;
+}
+.demo-shape{
+	width: 60px;
+	height: 60px;
+	float: right;
+	
+}
+.shape{
+	border-right: 30px solid #306a5d;
+	border-top: 30px solid #306a5d;
+	border-bottom: 30px solid #FFFFFF;
+	border-left: 30px solid #FFFFFF;
+}
+.demo-content{
+	background: #306a5d;
+	color: white;
+	float: right;
+	width: 245px;
+	padding-top: 20px;
+	text-align: center;
+	height: 60px;
+}
+.demo-content a{
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
 
 
 .nav-fix{
@@ -53,9 +112,36 @@ body{
 	/*color của thẻ a menu*/
 }
 
+/* -----------------------------------------------------------------*/
+/*content1*/
+.content1{
+	position: relative;
+}
+.ads{
+	position: absolute;
+	width: 20%;
+	top:50%;
+	left: 10%;
+	text-align: center;
+}
+.panel{
+	background-color: rgba(255, 255, 255, 0.44);
+}
+.ads button:hover{
+	opacity: 0.5; 
+}
+.btn{
+	margin-bottom: 20px;
+}
 
 /* -----------------------------------------------------------------*/
 /*//CSS cho sub-menu*/
+.content1{
+	background: url(../img/bg-header.jpg) center center no-repeat ;
+	height: 100vh;
+	width: 100%;
+	background-size: cover;
+}
 .active{
 	background: #1085c1;
 }
@@ -111,11 +197,6 @@ body{
 	color: black !important;
 	font-weight: bold;
 }
-.content1 img{
-	width: 100%;
-
-}
-
 /** -----------------------------------------------------------------*/
 /*SLIDE ảnh*/
 .wrap-slide{
@@ -154,18 +235,18 @@ body{
 	background-repeat: repeat-x;
 }
 .carousel-control {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 5%;
-    font-size: 20px;
-    color: #fff;
-    text-align: center;
-    text-shadow: 0 1px 2px rgba(0,0,0,.6);
-    background-color: rgba(0,0,0,0);
-    filter: alpha(opacity=50);
-    opacity: .5;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 5%;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	text-shadow: 0 1px 2px rgba(0,0,0,.6);
+	background-color: rgba(0,0,0,0);
+	filter: alpha(opacity=50);
+	opacity: .5;
 }
 
 .b .info-product{
@@ -180,7 +261,7 @@ span.info-hover{
 	left: 0%;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(103, 153, 80, 0.24);
+	background-color: rgba(255, 255, 255, 0.74);
 	display: none;
 	z-index: 10000;
 }
@@ -225,9 +306,32 @@ span.bogi{
 	overflow-x: hidden;
 }
 
+.head-boygirl{
+	font-size:40px;
+	font-weight: 900;
+	text-align: center;
+	padding-top: 100px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .abc{
-		background-color: #F9F5F2;
+	background-color: #F9F5F2;
 }
 
 

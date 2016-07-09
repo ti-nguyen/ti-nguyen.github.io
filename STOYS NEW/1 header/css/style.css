@@ -1,0 +1,258 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+/*main-color*/
+.test{
+	background: #5BB957; /*xanh lá cây*/
+	background: #1954f6; /*xanh lam*/
+	background: #be3641; /*đỏ hồng*/
+}
+
+/*-----------------------------------------------------------------*/
+/*set background body fixed*/
+body{
+	background: url(../img/bg.png);
+}
+.container{
+	background: rgba(91, 185, 87, 0.07);
+	height: 10000px;
+}
+
+/*-----------------------------------------------------------------*/
+/*Làm main-menu col-3 bên trái*/
+.panel-group .panel{ /*để các panel của menu ko bị cách nhau bới margin*/
+	margin-bottom: -5px;
+	width: 115%;	
+}
+.span-right{
+	float: right;
+	margin-right: -10px;	
+}
+.panel a{
+	display: block;
+	line-height: 15px;
+	text-transform: capitalize;
+}
+.glyphicon{
+	/*set font chữ cho các thẻ a*/
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 900;
+    -webkit-font-smoothing: antialiased;
+    word-spacing: -3px;
+    -moz-osx-font-smoothing: grayscale;
+    color: #5BB957;
+}
+.panel-group{
+	margin-top: 20px;
+}
+.panel .panel-heading:hover {
+	background: rgba(91, 185, 87, 0.49);
+	color: #1954f6;
+	transition: ease 0.5s;
+}
+
+
+/*-----------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
