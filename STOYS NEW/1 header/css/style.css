@@ -9,11 +9,18 @@ ul{
 a{
 	text-decoration: none;
 }
+.h1, .h2, .h3, h1, h2, h3 {
+	margin-top: 0px; 
+	margin-bottom: 0px; 
+}
 /*main-color*/
 .test{
 	background: #5BB957; /*xanh lá cây*/
 	background: #1954f6; /*xanh lam*/
 	background: #be3641; /*đỏ hồng*/
+}
+.clear-everything{
+	clear: both;
 }
 
 /*-----------------------------------------------------------------*/
@@ -25,12 +32,55 @@ body{
 	background: rgba(91, 185, 87, 0.07);
 	height: 10000px;
 }
+/*-----------------------------------------------------------------*/
+/*TOP RESIGN */
+
+.nav-fix{
+	/*position: fixed;*/
+	width: 100%;
+/*	z-index: 1000;*/
+}
+.navbar-inverse {
+	background-color: rgba(26, 180, 177, 0.94);
+}
+.navbar-header a.navbar-brand{
+	color:red;
+	font-family: 'Nosifer', cursive;
+	/*color: red !important ;*/
+	font-weight: 400;
+	font-size: 1.8em;
+}
+.nav a:hover{
+	color: white !important;
+}
+.navbar-collapse a.dropdown-menu{
+	color: red;
+}
+.drop-color-a{
+	color:#ebefc7 !important;
+	font-size: 1.3em;
+	/*color của thẻ a menu*/
+}
+/*END TOP-RESIGN*/
+
+/*-----------------------------------------------------------------*/
+/*THANH BỘ LỌC*/
+
+.breadcrumb {
+	padding: 8px 15px;
+	margin-top:20px;
+	margin-bottom: 20px;
+	list-style: none;
+	background: rgba(91, 185, 87, 0.09);
+	font-size: 17px;
+}
 
 /*-----------------------------------------------------------------*/
 /*Làm main-menu col-3 bên trái*/
-.panel-group .panel{ /*để các panel của menu ko bị cách nhau bới margin*/
-	margin-bottom: -5px;
-	width: 115%;	
+@media  (min-width: 1024px){	
+	.col-lg-3 .panel-group .panel{
+		min-width: 115%;
+	}
 }
 .span-right{
 	float: right;
@@ -43,13 +93,13 @@ body{
 }
 .glyphicon{
 	/*set font chữ cho các thẻ a*/
-    font-family: 'Glyphicons Halflings';
-    font-style: normal;
-    font-weight: 900;
-    -webkit-font-smoothing: antialiased;
-    word-spacing: -3px;
-    -moz-osx-font-smoothing: grayscale;
-    color: #5BB957;
+	font-family: 'Glyphicons Halflings';
+	font-style: normal;
+	font-weight: 900;
+	-webkit-font-smoothing: antialiased;
+	word-spacing: -3px;
+	-moz-osx-font-smoothing: grayscale;
+	color: #5BB957;
 }
 .panel-group{
 	margin-top: 20px;
@@ -61,7 +111,214 @@ body{
 }
 
 
-/*-----------------------------------------------------------------*/
+
+
+
+/* -----------------------------------------------------------------*/
+/*Bắt đầu danh sách sắp xếp*/
+.order-categories{
+	background: #5BB957;
+	border-radius: 8px;
+	margin-bottom: 20px;
+}
+.order-categories h3{
+	display: inline-block;
+	padding: 10px 30px;
+}
+.order-categories select{
+	width: 30%;
+	margin-bottom: 10px;
+}
+
+
+
+/*Kết thúc danh sách sắp xếp*/
+
+
+
+
+
+/*Bắt đầu làm products*/
+.padding-product{
+	padding-left: 35px;
+}
+/* -----------------------------------------------------------------*/
+/*SLIDE ảnh*/
+.wrap-slide{
+	margin-top: 30px;
+}
+.wrap-slide h2{
+	text-align: center;
+	font-size: 35px;
+
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+
+
+
+/*set lại các thuộc tính của nút next back slide*/
+.carousel-control.right{
+	right: 0;
+	left: auto;
+}
+.carousel-control.left {
+	background-image: -webkit-linear-gradient(left,rgba(0, 0, 0, 0) 0,rgba(0,0,0,.0001) 100%);
+	background-image: -o-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+	background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.0001)));
+	background-image: linear-gradient(to right,rgba(0, 0, 0, 0) 0,rgba(0,0,0,.0001) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+	background-repeat: repeat-x;
+}
+.carousel-control.right {
+	right: 0;
+	left: auto;
+	background-image: -webkit-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+	background-image: -o-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+	background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.0001)),to(rgba(0,0,0,.5)));
+	background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0, 0, 0, 0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+	background-repeat: repeat-x;
+}
+.carousel-control {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 5%;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	text-shadow: 0 1px 2px rgba(0,0,0,.6);
+	background-color: rgba(0,0,0,0);
+	filter: alpha(opacity=50);
+	opacity: .5;
+}
+/* END !!! set lại các thuộc tính của nút next back slide*/
+/*-----*/
+
+
+/*set tiêu đề cho slide*/
+.title-slide{
+	background: rgba(91, 185, 87, 0.32);
+	border-radius: 8px;
+}
+.title-slide h3{
+	min-width: 35%;
+	padding: 10px;
+	text-transform: uppercase;
+	background: #5BB957;
+	border-radius: 8px 0 0 8px;
+	display: inline-block;
+}
+.title-slide h2{
+	display: inline-block;
+	float: right;
+	padding-top: 4px;
+	padding-right: 10px;
+}
+
+/*Bắt đầu set ảnh size và hiệu ứng*/
+/*.b .info-product{
+	float: left;
+	width: 50%;
+	position: relative;
+	padding: 3px;
+	}*/
+	/*@media (min-width: 1024px){*/
+		.b .info-product{
+			float: left;
+			width: 33%;
+			position: relative;
+			padding: 3px;
+		}
+		/*}*/
+		.info-product img{
+			width: 100%;
+		}
+		span.info-hover{
+			position: absolute;
+			top: 0%;
+			left: 2.5%;
+			width: 95%;
+			height: 50%;
+			background-color: rgba(255, 255, 255, 0.69);
+			display: none;
+			z-index: 10000;
+		}
+		.img-img:hover span{
+			visibility: visible;
+			display: block;	
+		}
+		.img-img span{
+			padding: 10px;
+			text-align: justify;
+		}
+		.carousel-indicators li{
+			display: none;
+		}
+		/*end hiệu ứng hover và chỉnh size ảnh*/
+		/*--------------*/
+		/*bắt đầu làm detail thông tin của sản phẩm dưới ảnh*/
+		.detail-img{
+			width: 100%;
+			background: #FFF;
+			text-align: center;
+		}
+		.detail-img h4{
+			text-transform: uppercase;
+		}
+		.padding-detail{
+			padding: 20px;
+		}
+		.detail-img .btn{
+			padding: 10px 12px;
+			background: #BE3841;
+			letter-spacing: -2px;	
+		}
+		.detail-img .btn a{
+			color: #fff;
+			font-family: 'Glyphicons Halflings';
+		}
+		.detail-img .btn span{
+			color: #fff;
+		}
+		.detail-img button:hover {
+			background: rgba(3, 169, 244, 0.69);
+			transition: ease 0.3s;
+		}
+		.detail-img button:hover span{
+			transform: scale(1.2);
+			overflow:hidden;
+			transition: ease 0.4s;
+		}
+/*@media (max-width: 200px){
+	.detail-img button h3{
+		font-size: 15px;
+	}
+}
+
+.detail-img .iconshop  button h3{
+	font-size: 24px;
+	}*/
+
+	.notsale{
+		opacity: 0.5;
+		color: #BE3841;
+		font-weight: bold;
+		font-size: 16px;
+		text-decoration:line-through; 
+	}
+	.already-sale{
+		color: #BE3841;
+		font-weight: bold;
+		font-size: 20px;
+	}
+
+	/*detail thông tin của sản phẩm dưới ảnh*/
+	/*-----------*/
+	/*end slide ảnh*/
 
 
 
@@ -71,7 +328,16 @@ body{
 
 
 
-/*-----------------------------------------------------------------*/
+	/* -----------------------------------------------------------------*/
+	/*Bắt đầu PRODUCT2*/
+
+
+
+
+
+
+
+	/*-----------------------------------------------------------------*/
 
 
 
