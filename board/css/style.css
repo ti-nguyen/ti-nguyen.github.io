@@ -1,0 +1,212 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.h1, .h2, .h3, h1, h2, h3 {
+	margin-top: 0px; 
+	margin-bottom: 0px; 
+}
+/*main-color*/
+.test{
+	background: #5BB957; /*xanh lá cây*/
+	background: #1954f6; /*xanh lam*/
+	background: #be3641; /*đỏ hồng*/
+}
+.clear-everything{
+	clear: both;
+}
+
+/*||||||||||||||||||||||||||| END reset css ||||||||||||||||||||||||||||||||*/
+/*-----------------------------------------------------------*/
+
+
+/*|||||||||||||||||||||||||| Bắt đầu top logo - main-menu |||||||||||||||||||||||||||||||||*/
+/*start logo*/
+.logo-top{
+	background: #f5f5f5;
+}
+.sologan{
+	color: #333;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	vertical-align: text-top;
+}
+/*end logo*/
+
+/*start menu*/
+.menu-top{
+	background: #666 none repeat scroll 0 0;
+	min-height: 50px;
+	width: 100%;
+}
+.menu-top a,.menu-top span,.menu-top ul,.menu-top li{
+	color: white !important;
+	font-size: 18px;
+}
+.dropdown-menu{
+	background: #fff none repeat scroll 0 0;
+	border: 1px solid #e5e5e5;
+	float: left;
+	list-style: outside none none;
+	margin: 0;
+/*	min-height: 417px;*/
+	padding: 0;
+	position: absolute;
+	top: 50px;
+	width: 100%;
+	z-index: 999;
+	margin-top:2px !important;
+}
+
+@media (min-width: 768px){
+	.dropdown-menu{
+		display: block;
+		left: -25%;
+		width: 125%;
+	}
+}
+.dropdown-menu a{
+	background: #fff url(../img/bg-li.png) no-repeat 15px center;
+	border-left: 5px solid transparent;
+	color: #666;
+	float: left;
+	font-family: Open Sans;
+	font-size: 14px;
+	font-weight: 200;
+	padding-top: 3.7% !important;
+	padding-bottom: 3.7% !important;
+	padding-left: 33px !important;
+	text-decoration: none;
+	border-bottom: 1px solid black;
+	width: 100%;
+}
+.dropdown-menu a,.dropdown-menu li,.dropdown-menu ul{
+	color: black !important;
+}
+
+.dropdown-menu>li>a:hover {
+	color: #fff;
+	border-left: 5px solid #1566b0;
+	background: #46a3f7 url(../img/bg-li.png) no-repeat 15px center;
+}
+
+/*end menu*/
+
+
+/*bắt đầu top slide*/
+.carousel-control.right{
+	right: 0;
+	left: auto;
+}
+.carousel-control.left {
+	background-image: -webkit-linear-gradient(left,rgba(0, 0, 0, 0) 0,rgba(0,0,0,.0001) 100%);
+	background-image: -o-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+	background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.0001)));
+	background-image: linear-gradient(to right,rgba(0, 0, 0, 0) 0,rgba(0,0,0,.0001) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+	background-repeat: repeat-x;
+}
+.carousel-control.right {
+	right: 0;
+	left: auto;
+	background-image: -webkit-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+	background-image: -o-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+	background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.0001)),to(rgba(0,0,0,.5)));
+	background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0, 0, 0, 0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+	background-repeat: repeat-x;
+}
+.carousel-control {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 5%;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	text-shadow: 0 1px 2px rgba(0,0,0,.6);
+	background-color: rgba(0,0,0,0);
+	filter: alpha(opacity=50);
+	opacity: .5;
+}
+.slide-top{
+	max-height: 411px;
+	min-height: 410px !important;
+	overflow:hidden;
+	margin:0;
+	padding: 0;
+}
+@media (min-width: 768px){
+	.carousel-inner, .carousel-inner .item >a > img{ 
+	height: 410px;
+	width: 100%;
+}
+@media (max-width: 1024px){
+	.carousel-inner, .carousel-inner .item >a > img{ 
+	height: 410px;
+	width: 150%;
+}
+
+/*kết thúc top slide*/
+
+/*|||||||||||||||||||||||||| End top - main-menu |||||||||||||||||||||||||||||||||*/
+
+
+
+
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+/*-----------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

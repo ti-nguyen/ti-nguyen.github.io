@@ -1,18 +1,21 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>STOYS</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Product</title>
+
+
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	
+
+
+	<!-- animateCSS + style.css-->
+	<link rel="stylesheet" href="css/animate.css" type="text/css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
-
-	<!-- animateCSs -->
-
-	<link rel="stylesheet" href="css/animate.css" type="text/css">
 
 	<!-- font -->
 	<link href='https://fonts.googleapis.com/css?family=Nosifer' rel='stylesheet' type='text/css'>
@@ -22,9 +25,10 @@
 	<!-- font-family: 'Slackey', cursive; -->
 	<link href='https://fonts.googleapis.com/css?family=Bungee+Shade&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
 	<!-- font-family: 'Bungee Shade', cursive; -->
+
+
 </head>
 <body>
-	
 	<!-- BẮT ĐẦU menu !-->
 	<nav class="navbar navbar-inverse nav-fix ho anima">
 		<div class="container-fluid">
@@ -115,55 +119,88 @@
 		</div>
 	</nav>
 	<!-- end menu -->
+	
 
 
-	<!-- ---------------------------------------------------------------- -->
+	<!-- ----------------- CONTAINERRRRRRRRRRRRR ------------------- -->
+	<!-- Bắt đầu container -->
+	<div class="container">
 
 
+		<!-- ------------------ LEFT ---------------------- -->
+		<!-- bắt đầu menu left -->
+		<div class="col-xs-12 col-md-3 col-lg-3">
+			
+		</div>
+		<!-- kết thúc menu-left -->
+		<!-- ******************END LEFT ****************** -->
 
 
+		<!-- -------------------- RIGHT -------------------- -->
+		<!-- bắt đầu content product -->
+		<div class="col-xs-12 col-md-9 col-lg-9 padding-product">
+
+			<!-- -------------------- FOOTER -------------------- -->
+			<!-- BẮT ĐẦU FOOTER  -->
+			<div class="footer">
+			</div>
+			<!-- KẾT THSUC FOOTER  -->
+			<!-- ***************** END FOOTER ************************** -->
 
 
+		</div>	
+		<!-- kết thúc content product -->
+		<!-- ***************** END RIGHT ************************** -->
 
-	<!-- ---------------------------------------------------------------- -->
-
-
-
-
-	<!-- ---------------------------------------------------------------- -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	</div>
+	<!-- End container -->
+	<!-- *********************** END CONTAINER ************************* -->
 
 
 
 
 
 
-	<div style="height:1000px;" class="abc"></div>
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div style="height:1000px;"></div>
+
+	<!-- Chức năng khi hover vào menu-->
+	<script>
+		$('.panel-heading').hover(function () {
+			$(this).addClass('animated').addClass('shake');
+		},function(){
+			$(this).removeClass('animated').removeClass('fadeIn');
+		}	);	
+
+
+
+
+	</script>
 
 </body>
 </html>
