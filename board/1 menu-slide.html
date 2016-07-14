@@ -23,36 +23,31 @@
 		<div class="logo-top">
 			<div class="container">
 				<!-- start logo -->
-				<div class="logo-header col-xs-6 col-sm-6 col-md-3 col-lg-3">
-					<a href="http://boardgame.vn">
+				<div class="logo-header col-xs-6 col-sm-6 col-md-6 col-lg-6">
+					<a href="index.html">
 						<img width="88" height="86" id="logo_pc" src="img/logo.png" alt="boardgame.vn">
 						<span class="sologan">BoardgameVN</span>
 					</a>
 				</div>
 				<!-- end logo -->
-				<!-- start tìm kiếm -->
-				<div class="search-header col-md-3 col-lg-3 display-screen">
-					
-				</div>	
-				<!-- end tìm kiếm -->
-				<!-- start giỏ hàng -->
-				<div class="cart-header col-md3-3 col-lg-3 display-screen">
-					
+				<!-- start tim kiem -->
+				<div class="login-header col-xs-6 col-sm-6 col-md-6 col-lg-6">
+					<form role="form">
+						<div class="form-group">
+							<div class="search-bar">
+								<input type="password" class="form-control" id="pwd" placeholder="Tìm kiếm">
+								<a href="" class="btn btn-info"><span class="glyphicon glyphicon-search"></span> </a>
+							</div>
+						</div>
+					</form>
 				</div>
-				<!-- end giỏ hàng -->
-				<!-- start login -->
-				<div class="login-header col-xs-6 col-sm-6 col-md-3 col-lg-3">
-					
-				</div>
-				<!-- end login -->
+				<!-- end tim kiem -->
 
 			</div>
 			
 		</div>
 		<!-- end logo top và khung sign in tìm kiếm -->
-
 		<!-- ----------------------------------- -->
-
 		<!-- Bắt đầu làm menu chính  -->
 		<nav class="navbar-inverse menu-top">
 			<div class="container">
@@ -63,35 +58,101 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#">
+					<a class="navbar-brand" href="index.html">
 						<span class="sologan">BoardgameVN</span>
 					</a>
+
 				</div>
 
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav active">
 						<li class="dropdown">
-							<a class="dr opdown-toggle" data-toggle="dropdown" href="#">Danh sách sản phẩm <span class="caret"></span></a>
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Danh sách sản phẩm <span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li class="bg-li"><a href="#"> Page 1-1</a></li>
-								<li><a href="#"> Page 1-2</a></li>
-								<li><a href="#"> Page 1-3</a></li>
-								<li><a href="#"> Page 1-4</a></li>
-								<li><a href="#"> Page 1-5</a></li>
-								<li><a href="#"> Page 1-6</a></li>
-								<li><a href="#"> Page 1-7</a></li>
-								<li><a href="#"> Page 1-8</a></li>
-								<li><a href="#"> Page 1-9</a></li>
-								<li><a href="#"> Page 1-10</a></li>
+								<li class="bg-li"><a href="#"> Board Game mới nhập</a></li>
+								<li><a href="#"> Board Game giảm giá</a></li>
+								<li><a href="#"> Rubik</a></li>
+								<li><a href="#"> Board Game bán chạy</a></li>
+								<li><a href="#"> Board Game theo tuổi</a></li>
+								<li><a href="#"> Board Game nam/nữ</a></li>
+								<li><a href="#"> Board Game giải trí nhóm</a></li>
+								<li><a href="#"> Combo Khuyến Mãi</a></li>
+								<li><a href="#"> Board Game gia đình</a></li>
+								<li><a href="#" class="giohang"> Giỏ hàng</a></li>
 							</ul>
 						</li>
-						<li><a href="#">Page 2</a></li>
-						<li><a href="#">Page 3</a></li>
+						<li><a href="#">Tin Tức</a></li>
+						<li><a href="#">Liên Hệ</a></li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#"><span class="glyphicon glyphicon-user"></span> Đăng Nhập</a></li>
-						<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Đăng kí</a></li>
+						<li>
+							<a data-toggle="modal" href="#login"><span class="glyphicon glyphicon-user"></span> Đăng Nhập</a>
+						</li>
+						<li>
+							<a href="#resign" data-toggle="modal"><span class="glyphicon glyphicon-log-in"></span> Đăng kí</a>
+						</li>
 					</ul>
+					<!-- bắt đầu MODEL đăng kí-đăng nhập -->
+					<div class="dangki-dangnhap">
+						<!-- Modal box dang nhap -->
+						<div class="modal fade" id="login" role="dialog">
+							<div class="modal-dialog">
+								<!-- Modal content-->
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title" style="color:#BE3841;font-size:23px;">Đăng Nhập</h4>
+									</div>
+									<div class="modal-body">
+										<form role="form">
+											<div class="form-group">
+												<label for="email">Email:</label>
+												<input type="email" class="form-control" id="email" placeholder="Enter email">
+											</div>
+											<div class="form-group">
+												<label for="pwd">Password:</label>
+												<input type="password" class="form-control" id="pwd" placeholder="Enter password">
+											</div>
+											<div class="checkbox">
+												<label style="color:#BE3841"><input type="checkbox" > Ghi nhớ</label>
+											</div>
+											<button type="submit" class="btn btn-default">Submit</button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End box đăng nhập -->
+						<!-- Modal box dang kí -->
+						<div class="modal fade" id="resign" role="dialog">
+							<div class="modal-dialog">
+								<!-- Modal content-->
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title" style="color:#BE3841;font-size:23px;">Đăng Kí</h4>
+									</div>
+									<div class="modal-body">
+										<form role="form">
+											<div class="form-group">
+												<label for="email">Email:</label>
+												<input type="email" class="form-control" id="email" placeholder="Enter email">
+											</div>
+											<div class="form-group">
+												<label for="pwd">Password:</label>
+												<input type="password" class="form-control" id="pwd" placeholder="Enter password"><br>
+												<label for="pwd">Repeat Password:</label>
+												<input type="password" class="form-control" id="pwd" placeholder="Repeat password">
+											</div>
+											<button type="submit" class="btn btn-default">Submit</button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End box đăng kí -->
+					</div>
+					<!-- Kết thúc MODEL đăng kí-đăng nhập -->
 				</div>
 			</div>
 		</nav>		<!-- end menu chính -->
@@ -114,19 +175,19 @@
 					<!-- Wrapper for slides -->
 					<div class="carousel-inner" role="listbox">
 						<div class="item item-company active" >
-							<a>	<img class="img1" src="img/slidetop4.png" alt="1"></a>
+							<a>	<img class="img1" src="img/slidetop1.png" alt="1"></a>
 						</div>
 						<div class="item item-company">
-							<a><img src="img/slidetop2.jpg" alt="6"></a>
+							<a><img src="img/slidetop2.jpg" alt="2"></a>
 						</div>
 						<div class="item item-company">
-							<a><img src="img/slidetop3.jpg" alt="11"></a>
+							<a><img src="img/slidetop3.jpg" alt="3"></a>
 						</div>	
 						<div class="item item-company">
-							<a><img src="img/slidetop1.png" alt="21"></a>
+							<a><img src="img/slidetop4.jpg" alt="4"></a>
 						</div>	
 						<div class="item item-company">
-							<a><img src="img/slidetop3.jpg" alt="26"></a>
+							<a><img src="img/slidetop5.png" alt="5"></a>
 						</div>						
 					</div>
 
@@ -144,7 +205,6 @@
 			<!-- End Slide top -->
 		</div>
 		<!-- end slide -->
-		asd
 	</div>
 
 	<!-- end  - top -->
@@ -155,16 +215,16 @@
 	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
 	<!-- bắt đầu SHIPPING -->
 	<div class="container shipping-part">
-		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 giaohang">
+		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 giaohang">
 			<h4>giao hàng toàn quốc</h4>
 			<p>Hỗ trợ 63 tình thành trên toàn quốc</p>
 			<span><a href="">Xem thêm</a></span>
 		</div>
-		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 thanhtoan">
+		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 thanhtoan">
 			<h4>THANH TOÁN DỄ DÀNG</h4>
 			<p>Chuyển khoản ngân hàng hoặc thanh toán khi nhận hàng</p>
 		</div>
-		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 uudai">
+		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 uudai">
 			<h4>ƯU ĐÃI MUA NHÓM</h4>
 			<p>Dành cho các quán cafe hay trường học có nhu cầu</p>
 			<span><a href="">Xem thêm</a></span>
@@ -174,9 +234,1099 @@
 	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
 
 
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- Body product -->
+	
+	<!-- BẮT ĐẦU LÀM SLDIE PRODUCTS GIẢM GIÁ-->
+	<div class="container slide-product1">
+		<!-- Bắt đầu làm bar-title -->
+		<div class="bar-giamgia">
+			<h3>Board game giảm giá</h3>
+			<div class="xemthem"><a href="link/bar-giamgia.html">Xem thêm</a></div>
+		</div>
+		<!-- Kết thúc bar-title -->
+		<div id="bar-giamgia" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#bar-giamgia" data-slide-to="0" class="active"></li>
+				<li data-target="#bar-giamgia" data-slide-to="1"></li>
+				<li data-target="#bar-giamgia" data-slide-to="2"></li>
+				<li data-target="#bar-giamgia" data-slide-to="3"></li>
+			</ol>
 
+			<!-- bắt đầu ảnh -->
+			<div class="carousel-inner padding-slide" role="listbox">
+				<div class="item active">
+					<!-- sp1 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/sp1.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4> Tên sản phẩmTên sản phẩmTên sản phẩm <span class="btn btn-md btn-success" >-30%</span></h4>
+							<p class="summary">
+								Zuc Zac là một board game thuần Việt với luật đơn giản và nhiều cách chơi đa dạng.
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">150,000đ</span><br>
+									<del class="old-price">180,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 1 -->
 
+					<!-- sp2 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/sp1.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4> Tên sản phẩmTên sản phẩmTên sản phẩm <span class="btn btn-md btn-success" >-30%</span></h4>
+							<p class="summary">
+								Zuc Zac là một board game thuần Việt với luật đơn giản và nhiều cách chơi đa dạng.
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">150,000đ</span><br>
+									<del class="old-price">180,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thsuc sản phẩm 2 -->
 
+					<!-- sp3 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/sp1.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4> Tên sản phẩmTên sản phẩmTên sản phẩm <span class="btn btn-md btn-success" >-30%</span></h4>
+							<p class="summary">
+								Zuc Zac là một board game thuần Việt với luật đơn giản và nhiều cách chơi đa dạng.
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">150,000đ</span><br>
+									<del class="old-price">180,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 3 -->
+
+					<!-- sp4 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/sp1.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4> Tên sản phẩmTên sản phẩmTên sản phẩm <span class="btn btn-md btn-success" >-30%</span></h4>
+							<p class="summary">
+								Zuc Zac là một board game thuần Việt với luật đơn giản và nhiều cách chơi đa dạng.
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">150,000đ</span><br>
+									<del class="old-price">180,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 4 -->
+				</div>
+
+				<div class="item">
+					<!-- sp1 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/sp1.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4> Tên sản phẩmTên sản phẩmTên sản phẩm <span class="btn btn-md btn-success" >-30%</span></h4>
+							<p class="summary">
+								Zuc Zac là một board game thuần Việt với luật đơn giản và nhiều cách chơi đa dạng.
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">150,000đ</span><br>
+									<del class="old-price">180,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 1 -->
+
+					<!-- sp2 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/sp1.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4> Tên sản phẩmTên sản phẩmTên sản phẩm <span class="btn btn-md btn-success" >-30%</span></h4>
+							<p class="summary">
+								Zuc Zac là một board game thuần Việt với luật đơn giản và nhiều cách chơi đa dạng.
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">150,000đ</span><br>
+									<del class="old-price">180,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thsuc sản phẩm 2 -->
+
+					<!-- sp3 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/sp1.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4> Tên sản phẩmTên sản phẩmTên sản phẩm <span class="btn btn-md btn-success" >-30%</span></h4>
+							<p class="summary">
+								Zuc Zac là một board game thuần Việt với luật đơn giản và nhiều cách chơi đa dạng.
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">150,000đ</span><br>
+									<del class="old-price">180,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 3 -->
+
+					<!-- sp4 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/sp1.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4> Tên sản phẩmTên sản phẩmTên sản phẩm <span class="btn btn-md btn-success" >-30%</span></h4>
+							<p class="summary">
+								Zuc Zac là một board game thuần Việt với luật đơn giản và nhiều cách chơi đa dạng.
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">150,000đ</span><br>
+									<del class="old-price">180,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 4 -->
+				</div>
+
+			</div>
+		</div>
+		<!-- kết thúc ảnh -->
+		<!-- Left and right controls -->
+
+		<!-- bắt đầu làm nút trái phải -->
+		<a class="left carousel-control" href="#bar-giamgia" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#bar-giamgia" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+		<!-- kết thúc làm nút trái phải -->
+	</div>
+	<!-- KẾT THÚC SLIDE PRODUCT -->
+	<!-- --------- --><!-- -------------------------- -->
+	<!-- BẮT ĐẦU LÀM SLDIE PRODUCTS  BÁN CHẠY-->
+	<div class="container slide-product1">
+		<!-- Bắt đầu làm bar-title -->
+		<div class="bar-banchay">
+			<h3>Board game bán chạy</h3>
+			<div class="xemthem"><a href="link/bar-banchay.html">Xem thêm</a></div>
+		</div>
+		<!-- Kết thúc bar-title -->
+		<div id="bar-banchay" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#bar-banchay" data-slide-to="0" class="active"></li>
+				<li data-target="#bar-banchay" data-slide-to="1"></li>
+				<li data-target="#bar-banchay" data-slide-to="2"></li>
+				<li data-target="#bar-banchay" data-slide-to="3"></li>
+			</ol>
+
+			<!-- bắt đầu ảnh -->
+			<div class="carousel-inner padding-slide" role="listbox">
+				<div class="item active">
+					<!-- sp1 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/sp1.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4> Tên sản phẩmTên sản phẩmTên sản phẩm <span class="btn btn-md btn-success" >-30%</span></h4>
+							<p class="summary">
+								Zuc Zac là một board game thuần Việt với luật đơn giản và nhiều cách chơi đa dạng.
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">150,000đ</span><br>
+									<del class="old-price">180,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 1 -->
+
+					<!-- sp2 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/sp1.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4> Tên sản phẩmTên sản phẩmTên sản phẩm <span class="btn btn-md btn-success" >-30%</span></h4>
+							<p class="summary">
+								Zuc Zac là một board game thuần Việt với luật đơn giản và nhiều cách chơi đa dạng.
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">150,000đ</span><br>
+									<del class="old-price">180,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thsuc sản phẩm 2 -->
+
+					<!-- sp3 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/sp1.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4> Tên sản phẩmTên sản phẩmTên sản phẩm <span class="btn btn-md btn-success" >-30%</span></h4>
+							<p class="summary">
+								Zuc Zac là một board game thuần Việt với luật đơn giản và nhiều cách chơi đa dạng.
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">150,000đ</span><br>
+									<del class="old-price">180,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 3 -->
+
+					<!-- sp4 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/sp1.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4> Tên sản phẩmTên sản phẩmTên sản phẩm <span class="btn btn-md btn-success" >-30%</span></h4>
+							<p class="summary">
+								Zuc Zac là một board game thuần Việt với luật đơn giản và nhiều cách chơi đa dạng.
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">150,000đ</span><br>
+									<del class="old-price">180,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 4 -->
+				</div>
+
+				<div class="item">
+					<!-- sp1 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/sp1.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4> Tên sản phẩmTên sản phẩmTên sản phẩm <span class="btn btn-md btn-success" >-30%</span></h4>
+							<p class="summary">
+								Zuc Zac là một board game thuần Việt với luật đơn giản và nhiều cách chơi đa dạng.
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">150,000đ</span><br>
+									<del class="old-price">180,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 1 -->
+
+					<!-- sp2 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/sp1.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4> Tên sản phẩmTên sản phẩmTên sản phẩm <span class="btn btn-md btn-success" >-30%</span></h4>
+							<p class="summary">
+								Zuc Zac là một board game thuần Việt với luật đơn giản và nhiều cách chơi đa dạng.
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">150,000đ</span><br>
+									<del class="old-price">180,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thsuc sản phẩm 2 -->
+
+					<!-- sp3 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/sp1.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4> Tên sản phẩmTên sản phẩmTên sản phẩm <span class="btn btn-md btn-success" >-30%</span></h4>
+							<p class="summary">
+								Zuc Zac là một board game thuần Việt với luật đơn giản và nhiều cách chơi đa dạng.
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">150,000đ</span><br>
+									<del class="old-price">180,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 3 -->
+
+					<!-- sp4 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/sp1.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4> Tên sản phẩmTên sản phẩmTên sản phẩm <span class="btn btn-md btn-success" >-30%</span></h4>
+							<p class="summary">
+								Zuc Zac là một board game thuần Việt với luật đơn giản và nhiều cách chơi đa dạng.
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">150,000đ</span><br>
+									<del class="old-price">180,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 4 -->
+				</div>
+
+			</div>
+		</div>
+		<!-- kết thúc ảnh -->
+		<!-- Left and right controls -->
+
+		<!-- bắt đầu làm nút trái phải -->
+		<a class="left carousel-control" href="#bar-giamgia" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#bar-giamgia" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+		<!-- kết thúc làm nút trái phải -->
+	</div>
+	<!-- KẾT THÚC SLIDE PRODUCT -->
+	<!-- --------- --><!-- -------------------------- -->
+	<!-- BẮT ĐẦU LÀM SLDIE RUBIK -->
+	<div class="container slide-product1">
+		<!-- Bắt đầu làm bar-title -->
+		<div class="bar-rubik">
+			<h3>Board game rubik</h3>
+			<div class="xemthem"><a href="link/bar-rubik.html">Xem thêm</a></div>
+		</div>
+		<!-- Kết thúc bar-title -->
+		<div id="bar-rubik" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#bar-rubik" data-slide-to="0" class="active"></li>
+				<li data-target="#bar-rubik" data-slide-to="1"></li>
+				<li data-target="#bar-rubik" data-slide-to="2"></li>
+				<li data-target="#bar-rubik" data-slide-to="3"></li>
+			</ol>
+
+			<!-- bắt đầu ảnh -->
+			<div class="carousel-inner padding-slide" role="listbox">
+				<div class="item active">
+					<!-- sp1 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/sp1.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4> Tên sản phẩmTên sản phẩmTên sản phẩm <span class="btn btn-md btn-success" >-30%</span></h4>
+							<p class="summary">
+								Zuc Zac là một board game thuần Việt với luật đơn giản và nhiều cách chơi đa dạng.
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">150,000đ</span><br>
+									<del class="old-price">180,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 1 -->
+
+					<!-- sp2 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/sp1.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4> Tên sản phẩmTên sản phẩmTên sản phẩm <span class="btn btn-md btn-success" >-30%</span></h4>
+							<p class="summary">
+								Zuc Zac là một board game thuần Việt với luật đơn giản và nhiều cách chơi đa dạng.
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">150,000đ</span><br>
+									<del class="old-price">180,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thsuc sản phẩm 2 -->
+
+					<!-- sp3 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/sp1.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4> Tên sản phẩmTên sản phẩmTên sản phẩm <span class="btn btn-md btn-success" >-30%</span></h4>
+							<p class="summary">
+								Zuc Zac là một board game thuần Việt với luật đơn giản và nhiều cách chơi đa dạng.
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">150,000đ</span><br>
+									<del class="old-price">180,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 3 -->
+
+					<!-- sp4 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/sp1.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4> Tên sản phẩmTên sản phẩmTên sản phẩm <span class="btn btn-md btn-success" >-30%</span></h4>
+							<p class="summary">
+								Zuc Zac là một board game thuần Việt với luật đơn giản và nhiều cách chơi đa dạng.
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">150,000đ</span><br>
+									<del class="old-price">180,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 4 -->
+				</div>
+
+				<div class="item">
+					<!-- sp1 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/sp1.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4> Tên sản phẩmTên sản phẩmTên sản phẩm <span class="btn btn-md btn-success" >-30%</span></h4>
+							<p class="summary">
+								Zuc Zac là một board game thuần Việt với luật đơn giản và nhiều cách chơi đa dạng.
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">150,000đ</span><br>
+									<del class="old-price">180,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 1 -->
+
+					<!-- sp2 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/sp1.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4> Tên sản phẩmTên sản phẩmTên sản phẩm <span class="btn btn-md btn-success" >-30%</span></h4>
+							<p class="summary">
+								Zuc Zac là một board game thuần Việt với luật đơn giản và nhiều cách chơi đa dạng.
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">150,000đ</span><br>
+									<del class="old-price">180,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thsuc sản phẩm 2 -->
+
+					<!-- sp3 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/sp1.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4> Tên sản phẩmTên sản phẩmTên sản phẩm <span class="btn btn-md btn-success" >-30%</span></h4>
+							<p class="summary">
+								Zuc Zac là một board game thuần Việt với luật đơn giản và nhiều cách chơi đa dạng.
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">150,000đ</span><br>
+									<del class="old-price">180,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 3 -->
+
+					<!-- sp4 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/sp1.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4> Tên sản phẩmTên sản phẩmTên sản phẩm <span class="btn btn-md btn-success" >-30%</span></h4>
+							<p class="summary">
+								Zuc Zac là một board game thuần Việt với luật đơn giản và nhiều cách chơi đa dạng.
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">150,000đ</span><br>
+									<del class="old-price">180,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 4 -->
+				</div>
+
+			</div>
+		</div>
+		<!-- kết thúc ảnh -->
+		<!-- Left and right controls -->
+
+		<!-- bắt đầu làm nút trái phải -->
+		<a class="left carousel-control" href="#bar-giamgia" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#bar-giamgia" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+		<!-- kết thúc làm nút trái phải -->
+	</div>
+	<!-- KẾT THÚC SLIDE RUBIK -->
+	<!-- --------- --><!-- -------------------------- -->
+	<!-- BẮT ĐẦU LÀM SLDIE COMBO -->
+	<div class="container slide-product1">
+		<!-- Bắt đầu làm bar-title -->
+		<div class="bar-combo">
+			<h3>Board game combo</h3>
+			<div class="xemthem"><a href="link/bar-combo.html">Xem thêm</a></div>
+		</div>
+		<!-- Kết thúc bar-title -->
+		<div id="bar-combo" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#bar-combo" data-slide-to="0" class="active"></li>
+				<li data-target="#bar-combo" data-slide-to="1"></li>
+				<li data-target="#bar-combo" data-slide-to="2"></li>
+				<li data-target="#bar-combo" data-slide-to="3"></li>
+			</ol>
+
+			<!-- bắt đầu ảnh -->
+			<div class="carousel-inner padding-slide" role="listbox">
+				<div class="item active">
+					<!-- sp1 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/sp1.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4> Tên sản phẩmTên sản phẩmTên sản phẩm <span class="btn btn-md btn-success" >-30%</span></h4>
+							<p class="summary">
+								Zuc Zac là một board game thuần Việt với luật đơn giản và nhiều cách chơi đa dạng.
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">150,000đ</span><br>
+									<del class="old-price">180,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 1 -->
+
+					<!-- sp2 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/sp1.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4> Tên sản phẩmTên sản phẩmTên sản phẩm <span class="btn btn-md btn-success" >-30%</span></h4>
+							<p class="summary">
+								Zuc Zac là một board game thuần Việt với luật đơn giản và nhiều cách chơi đa dạng.
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">150,000đ</span><br>
+									<del class="old-price">180,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thsuc sản phẩm 2 -->
+
+					<!-- sp3 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/sp1.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4> Tên sản phẩmTên sản phẩmTên sản phẩm <span class="btn btn-md btn-success" >-30%</span></h4>
+							<p class="summary">
+								Zuc Zac là một board game thuần Việt với luật đơn giản và nhiều cách chơi đa dạng.
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">150,000đ</span><br>
+									<del class="old-price">180,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 3 -->
+
+					<!-- sp4 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/sp1.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4> Tên sản phẩmTên sản phẩmTên sản phẩm <span class="btn btn-md btn-success" >-30%</span></h4>
+							<p class="summary">
+								Zuc Zac là một board game thuần Việt với luật đơn giản và nhiều cách chơi đa dạng.
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">150,000đ</span><br>
+									<del class="old-price">180,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 4 -->
+				</div>
+
+				<div class="item">
+					<!-- sp1 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/sp1.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4> Tên sản phẩmTên sản phẩmTên sản phẩm <span class="btn btn-md btn-success" >-30%</span></h4>
+							<p class="summary">
+								Zuc Zac là một board game thuần Việt với luật đơn giản và nhiều cách chơi đa dạng.
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">150,000đ</span><br>
+									<del class="old-price">180,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 1 -->
+
+					<!-- sp2 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/sp1.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4> Tên sản phẩmTên sản phẩmTên sản phẩm <span class="btn btn-md btn-success" >-30%</span></h4>
+							<p class="summary">
+								Zuc Zac là một board game thuần Việt với luật đơn giản và nhiều cách chơi đa dạng.
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">150,000đ</span><br>
+									<del class="old-price">180,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thsuc sản phẩm 2 -->
+
+					<!-- sp3 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/sp1.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4> Tên sản phẩmTên sản phẩmTên sản phẩm <span class="btn btn-md btn-success" >-30%</span></h4>
+							<p class="summary">
+								Zuc Zac là một board game thuần Việt với luật đơn giản và nhiều cách chơi đa dạng.
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">150,000đ</span><br>
+									<del class="old-price">180,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 3 -->
+
+					<!-- sp4 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/sp1.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4> Tên sản phẩmTên sản phẩmTên sản phẩm <span class="btn btn-md btn-success" >-30%</span></h4>
+							<p class="summary">
+								Zuc Zac là một board game thuần Việt với luật đơn giản và nhiều cách chơi đa dạng.
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">150,000đ</span><br>
+									<del class="old-price">180,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 4 -->
+				</div>
+
+			</div>
+		</div>
+		<!-- kết thúc ảnh -->
+		<!-- Left and right controls -->
+
+		<!-- bắt đầu làm nút trái phải -->
+		<a class="left carousel-control" href="#bar-giamgia" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#bar-giamgia" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+		<!-- kết thúc làm nút trái phải -->
+	</div>
+
+	<!-- KẾT THÚC SLIDE COMBO -->
+	<!-- END body product -->
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
 
 
 
@@ -243,6 +1393,11 @@
 
 
 	<div style="width:100%; height:3000px;"></div>
+	<script>
+		$(document).ready(function(){
+			$('[data-toggle="tooltip"]').tooltip();
+		});
+	</script>
 
 </body>
 </html>	

@@ -1,0 +1,1621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width; initial-scale =1 ">
+	<title>Ma sói</title>
+
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	
+	<!-- animateCSS + style.css-->
+	<!-- <link rel="stylesheet" href="css/animate.css" type="text/css"> -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	
+
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- bắt đầu  - top -->
+	<div class="container-fuild">
+		<!-- bắt đầu làm logo-top và khung sign in tìm kiém -->
+		<div class="logo-top">
+			<div class="container">
+				<!-- start logo -->
+				<div class="logo-header col-xs-6 col-sm-6 col-md-6 col-lg-6">
+					<a href="index.html">
+						<img width="88" height="86" id="logo_pc" src="img/logo.png" alt="boardgame.vn">
+						<span class="sologan">BoardgameVN</span>
+					</a>
+				</div>
+				<!-- end logo -->
+				<!-- start tim kiem -->
+				<div class="login-header col-xs-6 col-sm-6 col-md-6 col-lg-6">
+					<form role="form">
+						<div class="form-group">
+							<div class="search-bar">
+								<input type="password" class="form-control" id="pwd" placeholder="Tìm kiếm">
+								<a href="" class="btn btn-info"><span class="glyphicon glyphicon-search"></span> </a>
+							</div>
+						</div>
+					</form>
+				</div>
+				<!-- end tim kiem -->
+
+			</div>
+			
+		</div>
+		<!-- end logo top và khung sign in tìm kiếm -->
+		<!-- ----------------------------------- -->
+		<!-- Bắt đầu làm menu chính  -->
+		<nav class="navbar-inverse menu-top">
+			<div class="container">
+				<div class="navbar-header"><!-- để cho submenu bằng width vs cái trên nó -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<!-- navbar-toggle để cho cái icon float-right và hiện là 1 icon, collapse để nhấn vào nó hiện ra submenu và đóng submenu -->
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">
+						<span class="sologan">BoardgameVN</span>
+					</a>
+
+				</div>
+
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav active">
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Danh sách sản phẩm <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li class="bg-li"><a href="#"> Board Game mới nhập</a></li>
+								<li><a href="#"> Board Game giảm giá</a></li>
+								<li><a href="#"> Rubik</a></li>
+								<li><a href="#"> Board Game bán chạy</a></li>
+								<li><a href="#"> Board Game theo tuổi</a></li>
+								<li><a href="#"> Board Game nam/nữ</a></li>
+								<li><a href="#"> Board Game giải trí nhóm</a></li>
+								<li><a href="#"> Combo Khuyến Mãi</a></li>
+								<li><a href="#"> Board Game gia đình</a></li>
+								<li><a href="#" class="giohang"> Giỏ hàng</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Tin Tức</a></li>
+						<li><a href="#">Liên Hệ</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a data-toggle="modal" href="#login"><span class="glyphicon glyphicon-user"></span> Đăng Nhập</a>
+						</li>
+						<li>
+							<a href="#resign" data-toggle="modal"><span class="glyphicon glyphicon-log-in"></span> Đăng kí</a>
+						</li>
+					</ul>
+					<!-- bắt đầu MODEL đăng kí-đăng nhập -->
+					<div class="dangki-dangnhap">
+						<!-- Modal box dang nhap -->
+						<div class="modal fade" id="login" role="dialog">
+							<div class="modal-dialog">
+								<!-- Modal content-->
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title" style="color:#BE3841;font-size:23px;">Đăng Nhập</h4>
+									</div>
+									<div class="modal-body">
+										<form role="form">
+											<div class="form-group">
+												<label for="email">Email:</label>
+												<input type="email" class="form-control" id="email" placeholder="Enter email">
+											</div>
+											<div class="form-group">
+												<label for="pwd">Password:</label>
+												<input type="password" class="form-control" id="pwd" placeholder="Enter password">
+											</div>
+											<div class="checkbox">
+												<label style="color:#BE3841"><input type="checkbox" > Ghi nhớ</label>
+											</div>
+											<button type="submit" class="btn btn-default">Submit</button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End box đăng nhập -->
+						<!-- Modal box dang kí -->
+						<div class="modal fade" id="resign" role="dialog">
+							<div class="modal-dialog">
+								<!-- Modal content-->
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title" style="color:#BE3841;font-size:23px;">Đăng Kí</h4>
+									</div>
+									<div class="modal-body">
+										<form role="form">
+											<div class="form-group">
+												<label for="email">Email:</label>
+												<input type="email" class="form-control" id="email" placeholder="Enter email">
+											</div>
+											<div class="form-group">
+												<label for="pwd">Password:</label>
+												<input type="password" class="form-control" id="pwd" placeholder="Enter password"><br>
+												<label for="pwd">Repeat Password:</label>
+												<input type="password" class="form-control" id="pwd" placeholder="Repeat password">
+											</div>
+											<button type="submit" class="btn btn-default">Submit</button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End box đăng kí -->
+					</div>
+					<!-- Kết thúc MODEL đăng kí-đăng nhập -->
+				</div>
+			</div>
+		</nav>		<!-- end menu chính -->
+		<!-- ----------------------------------- -->
+
+
+		<!-- bắt đầu làm slide -->
+		<div class="slide-top">
+			<!-- bắt đầu slide top-->
+			<div class="slide-top">
+				<div id="mycompany" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#mycompany" data-slide-to="0" class="active"></li>
+						<li data-target="#mycompany" data-slide-to="1"></li>
+						<li data-target="#mycompany" data-slide-to="2"></li>
+						<li data-target="#mycompany" data-slide-to="3"></li>
+					</ol>
+
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						<div class="item item-company active" >
+							<a>	<img class="img1" src="img/slidetop1.png" alt="1"></a>
+						</div>
+						<div class="item item-company">
+							<a><img src="img/slidetop2.jpg" alt="2"></a>
+						</div>
+						<div class="item item-company">
+							<a><img src="img/slidetop3.jpg" alt="3"></a>
+						</div>	
+						<div class="item item-company">
+							<a><img src="img/slidetop4.jpg" alt="4"></a>
+						</div>	
+						<div class="item item-company">
+							<a><img src="img/slidetop5.png" alt="5"></a>
+						</div>						
+					</div>
+
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#mycompany" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#mycompany" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+			<!-- End Slide top -->
+		</div>
+		<!-- end slide -->
+	</div>
+
+	<!-- end  - top -->
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+	<!-- -------------------------- -->
+
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- bắt đầu SHIPPING -->
+	<div class="container shipping-part">
+		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 giaohang">
+			<h4>giao hàng toàn quốc</h4>
+			<p>Hỗ trợ 63 tình thành trên toàn quốc</p>
+			<span><a href="">Xem thêm</a></span>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 thanhtoan">
+			<h4>THANH TOÁN DỄ DÀNG</h4>
+			<p>Chuyển khoản ngân hàng hoặc thanh toán khi nhận hàng</p>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 uudai">
+			<h4>ƯU ĐÃI MUA NHÓM</h4>
+			<p>Dành cho các quán cafe hay trường học có nhu cầu</p>
+			<span><a href="">Xem thêm</a></span>
+		</div>
+	</div>	
+	<!-- END SHIPPING -->
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+	<!-- -------------------------------------------------------------- -->
+	<hr style="border:1px solid black;width:80%;margin:0 auto">
+	<!-- CHILDREN -->
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- Bắt đầu nội dung của sản phẩm -->
+	<div class="container">
+		<div class="top-detail">
+			<!-- ảnh đại diện -->
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 anhdaidien thumbnail">
+				<img src="img/giamgia/masoi/1.jpg" alt="ma sói">
+			</div>
+			<!-- kết thúc ảnh đại diện -->
+			<!-- ----------- -->
+			<!-- giá tiền - đặt mua -->
+			<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 thongtindaidien">
+				<h3 class="product-name">Ma Sói - Characters</h3>
+				<p>Thương hiệu: Tinguyen</p>
+				<p class="forsale">Trong kho: <a>Sẵn hàng</a> </p>
+				<div class="cangiua">
+					<h3 class="pro-price" style="display:inline">
+						<span>Giá mới:</span>
+						100.000 ₫ 
+						<span class="old-price">Giá cũ: <del>150,000đ</del> </span>
+					</h3>
+					<div class="iconshop-children" style="display:inline">
+						<button type="button" class="btn btn-lg ">
+							<!-- btn btn-default btn-lg btn-block -->
+							<h3>
+								<a href="">
+									<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+
+								</a>
+							</h3>
+						</button>
+					</div>
+				</div>
+				<div class="clear-everything"></div>
+				<p class="sub-title">
+					<u> Bạn đang xem giá tại Board Game Vn</u> <br>
+					-  Tập tính kiên nhẫn khi chơi cũng như khi học hành.<br>
+					-  Phát triển thị giác qua việc nhận biết các màu sắc.<br>
+					-  Rèn luyện kỹ năng khéo léo, linh hoạt, chính xác trong khi chơi.
+				</p>
+				<hr style="border:1px solid black;">
+			</div>
+			<!-- kết thúc giá tiền - đặt mua -->
+
+
+			<div class="clear-everything"></div>
+
+
+			<!-- Bắt đầu đánh giá bình luận video -->
+			<div class="raterate">
+				<!-- làm thông tin kĩ thuạt và video -->
+				<ul class="nav nav-tabs size-nav">
+					<li class="active col-xs-4 col-sm-4 col-md-4 col-lg-4"><a data-toggle="pill" href="#gioithieu">Giới thiệu</a></li>
+					<li class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><a data-toggle="pill" href="#thongtinsanpham">Video hướng dẫn</a></li>
+					<li class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><a data-toggle="pill" href="#danhgiavabinhluan">Đánh giá &amp; Bình luận</a></li>
+				</ul>
+
+
+				<div class="tab-content fontchonavtabs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<!-- gioithieu -->
+					<div id="gioithieu" class="tab-pane fade in active">
+						<p>
+
+							Ma Sói phiên bản đặc biệt Characters bao gồm 24 lá cơ bản và 16 nhân vật hoàn toàn mới cộng thêm các lá bài sự kiện! Các nhân vật như thiên sứ, chị em sinh đôi, kịch sĩ, sói trắng, sói trùm, ... hứa hẹn sẽ đem đến cho bạn một kinh nghiệm mới mẻ trong một game tưởng chừng như đã quen thuộc. Nào cùng khám phá Characters!
+
+						</p>
+						<div class="img-introduce">
+							<div class="col-xs-3 col-md-3 col-sm-3 col-lg-3 thumbnail">
+								<img src="img/giamgia/masoi/1.jpg" alt="" class="img-responsive">
+							</div>
+							<div class="col-xs-3 col-md-3 col-sm-3 col-lg-3 thumbnail">
+								<img src="img/giamgia/masoi/2.jpg" alt="" class="img-responsive">
+							</div>
+							<div class="col-xs-3 col-md-3 col-sm-3 col-lg-3 thumbnail">
+								<img src="img/giamgia/masoi/3.jpg" alt="" class="img-responsive">
+							</div>
+							<div class="col-xs-3 col-md-3 col-sm-3 col-lg-3 thumbnail">
+								<img src="img/giamgia/masoi/4.jpg" alt="" class="img-responsive">
+							</div>
+						</div>
+						<div class="clear-everything"></div>
+						<p>
+							<strong>Thể loại game</strong>:là game thuyết phục, ngôn ngữ cơ thể, teamwork. Ma Sói có nhiều phiên bản và nhiều lớp nhân vật, nhưng sẽ có 2 phiên bản chính: cơ bản (basic) và trăng non (newmoon). Ma sói sẽ được kết hợp giữa lời kể chuyện, âm thanh và ánh sáng khiến trò chơi trở nên huyền ảo và hấp dẫn tột cùng.<br>
+
+							<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bối cảnh game:</strong>  Châu Âu vào thời trung cổ, có một chàng trai tên là Wilhelm đã đắc tội với một phù thủy nên ông đã bị nguyền rủa một lời nguyền khủng khiếp. Lời nguyền đó là…. “Người sẽ trở thành loài thú dữ vào đêm khuya, ngươi và con cháu ngươi sẽ luôn bị loài người săn đuổi”. Vào tối hôm đó Wilhelm và ba người con của mình đã biến thành sói và tàn sát toàn bộ người trong làng. Việc tàn sát tiếp tục diễn ra ở các ngôi làng lân cận, khi họ di chuyển tới Estonia thì họ bị bắt giữ và bị phán quyết án tử hình. Tuy nhiên một người con của Wihelm đã trốn thoát được và người con ấy thề sẽ trả thù loài người. Người con ấy tự xưng mình là Werewolf. Truyền thuyết về Werewolf ra đời……. 			
+						</p>
+						<p>
+							<strong>Kiến thức cơ bản:</strong> <br>
+							> Số lượng người chơi: từ 8 – 23 người (10 – 15 người là phù hợp nhất). <br>
+							> 8 - 9 người: 1 tiên tri, 1 bảo vệ, 2 sói + dân. <br>
+							> 10 - 11 người: 1 tiên tri, 1 bảo vệ, 1 thợ săn, 3 sói + dân. <br>
+							> 12 - 13 người: 1 tiên tri, 1 bảo vệ, 1 thợ săn, 1 cupid, 3 sói + dân <br>
+							> 14 người: 1 tiên tri, 1 bảo vệ, 1 thợ săn, 1 cupid, 1 phù thủy + 3 sói + 5 dân + 1 phản bội <br>
+							> 15 người: 1 tiên tri, 1 bảo vệ, 1 thợ săn, 1 cupid, 1 phù thủy + 4 sói + 6 dân <br>
+							> 16 người: 1 tiên tri, 1 bảo vệ, 1 thợ săn, 1 cupid, 1 phù thủy, 1 già làng + 4 sói + 6 dân <br>
+							> 17 người: 1 tiên tri, 1 bảo vệ, 1 thợ săn, 1 cupid, 1 phù thủy, 1 già làng, 1 thổi sáo + 4 sói + 6 dân 17 người: 1 tiên tri, 1 bảo vệ, 1 thợ săn, 1 cupid, 1 phù thủy, 1 già làng, 1 thổi sáo, 1 pháp sư câm + 4 sói + 5 dân <br>
+							> 18 người: 1 tiên tri, 1 bảo vệ, 1 thợ săn, 1 cupid, 1 phù thủy, 1 già làng, 1 thổi sáo, 1 pháp sư câm + 4 sói + 6 dân <br>
+							Từ đó cứ thêm 1 người là thêm 1 dân.
+						</p>
+					</div>
+					<!-- end gioi thieu -->
+
+					<!-- thong tin san pham -->
+					<div id="thongtinsanpham" class="tab-pane fade">
+						<h3>Xem hướng dẫn chơi tại đây</h3>
+						<p>
+							<div class="embed-responsive embed-responsive-16by9 pad-embed">
+								<iframe width="854" height="480" src="https://www.youtube.com/embed/I1Fz5XwcOY8" frameborder="0" allowfullscreen></iframe>
+							</div>
+						</p>
+					</div>
+					<!-- end thong tin san pham -->
+
+					<!-- danh gia va binh luan -->
+					<div id="danhgiavabinhluan" class="tab-pane fade">
+						<p>
+							Đánh giá:<br>
+
+							<form action="">
+								<fieldset style="border:1px solid black;">
+									
+
+									<label for="hoten">Họ tên (*):</label> <br>
+									<input type="text" required="required" id="hoten" name="hoten" placeholder="nguyễn văn a"><br>
+
+									<label for="tieude">Tiêu đề(*)</label><br>
+									<input type="text" id="tieude" name="tieude" required="required" placeholder="tiêu đề cần bình luận"><br>
+
+									<label for="noidung">Nội dung</label><br>
+									<textarea id="noidung" name="noidung" cols="5" rows="3" placeholder="bình luận tại đây"></textarea>
+
+									<label for="">Cho điểm sản phẩm này</label><br>
+
+
+									<table class="rating" id="rating">
+										<!-- dòng 1 -->
+										<tr>
+											<th class="w-left"><span class="glyphicon glyphicon-star-empty"></span></th>
+											<th class="w-right"><span class="glyphicon glyphicon-star-empty"></span> 1 sao</th>
+											<th class="w-right"><span class="glyphicon glyphicon-star-empty"></span> 2 sao</th>
+											<th class="w-right"><span class="glyphicon glyphicon-star-empty"></span> 3 sao</th>
+											<th class="w-right"><span class="glyphicon glyphicon-star-empty"></span> 4 sao</th>
+											<th class="w-right"><span class="glyphicon glyphicon-star-empty"></span> 5 sao</th>
+										</tr>
+										<!-- hết dòng 1 -->
+
+										<!-- bắt đầu dòng 2 -->
+										<tr>
+											<td class="text-left">Chất lượng</td>
+											<td><input type="radio" name="chatluong" value="1"></td>
+											<td><input type="radio" name="chatluong" value="2"></td>
+											<td><input type="radio" name="chatluong" value="3"></td>
+											<td><input type="radio" name="chatluong" value="4"></td>
+											<td><input type="radio" name="chatluong" value="5"></td>
+										</tr>
+										<!-- kết thúc dòng 2 -->
+
+
+										<!-- bắt đầu dòng 3 -->
+										<tr>
+											<td class="text-left">Giá tiền</td>
+											<td><input type="radio" name="giatien" value="1"></td>
+											<td><input type="radio" name="giatien" value="2"></td>
+											<td><input type="radio" name="giatien" value="3"></td>
+											<td><input type="radio" name="giatien" value="4"></td>
+											<td><input type="radio" name="giatien" value="5"></td>
+										</tr>
+										<!-- kết thúc donòng 3 -->
+
+										<!-- bắt đầu dòng 4 -->
+										<tr>
+											<td class="text-left">Phục vụ</td>
+											<td><input type="radio" name="phucvu" value="1"></td>
+											<td><input type="radio" name="phucvu" value="2"></td>
+											<td><input type="radio" name="phucvu" value="3"></td>
+											<td><input type="radio" name="phucvu" value="4"></td>
+											<td><input type="radio" name="phucvu" value="5"></td>
+										</tr>
+										<!-- kết thúc dòng 4 -->
+									</table>
+									
+									<input type="submit" class="btn btn-info sub-rating" value="GỬI">
+								</fieldset>
+
+							</form>
+
+						</p>
+					</div>
+					<!-- end danh gia va binh luan -->
+
+
+				</div>
+			</div>
+			<!-- kết thúc đánh gái bình luận -->
+		</div>
+	</div>
+	<div class="container">
+		<div class="cothebanquantam">
+			Có thể bạn quan tâm
+			<hr style="border:1px solid #BE3841;">
+
+		</div>
+	</div>
+	<!-- kết thúc nội dung sản phẩm -->
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- Body product -->
+	
+	<!-- BẮT ĐẦU LÀM SLDIE Giảm giá -->
+	<div class="container slide-product1">
+		<!-- Bắt đầu làm bar-title -->
+		<div class="bar-giamgia">
+			<h3>Board game giảm giá</h3>
+			<div class="xemthem"><a href="link/bar-giamgia.html">Xem thêm</a></div>
+		</div>
+		<!-- Kết thúc bar-title -->
+		<div id="bar-giamgia" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#bar-giamgia" data-slide-to="0" class="active"></li>
+				<li data-target="#bar-giamgia" data-slide-to="1"></li>
+				<li data-target="#bar-giamgia" data-slide-to="2"></li>
+				<li data-target="#bar-giamgia" data-slide-to="3"></li>
+			</ol>
+
+			<!-- bắt đầu ảnh -->
+			<div class="carousel-inner padding-slide" role="listbox">
+				<div class="item active">
+					<!-- sp1 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/giamgia/masoi/1.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4>Ma Sói - Characters<span class="btn btn-md btn-success" >-30%</span></h4>
+							<p class="summary">
+								Bạn là một người thích chơi Ma Sói, nhưng lại không có đủ số người để chơi, hoặc không thích cảm giác bị loại trừ....
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">100,000đ</span><br>
+									<del class="old-price">150,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 1 -->
+
+					<!-- sp2 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/sp1.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4>Zuc Zac - Cùng Lắc Xí Ngầu<span class="btn btn-md btn-success" >-17%</span></h4>
+							<p class="summary">
+								Với mong muốn phổ biến board game cho nước nhà, cũng như mang những board game của người Việt ra nước ngoài, để thể...
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">150,000đ</span><br>
+									<del class="old-price">180,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thsuc sản phẩm 2 -->
+
+					<!-- sp3 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/pro/giamgia/3.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4>Exploding Kittens - Mèo Cảm Tử<span class="btn btn-md btn-success" >-20%</span></h4>
+							<p class="summary">
+								Exploding Kittens nổi lên như một hiện tượng trong vài năm qua. Chưa tính đến gameplay, nhưng về mặt marketing đây...
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">200,000đ</span><br>
+									<del class="old-price">250,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 3 -->
+
+					<!-- sp4 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/pro/giamgia/4.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4>Sushi Go! - Sushi Băng Chuyền<span class="btn btn-md btn-success" >-32%</span></h4>
+							<p class="summary">
+								Là một card game giả lập băng chuyền Sushi, Sushi Go! không thiếu những hành động “giả lập” thực tế như dùng Đũa ...
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">150,000đ</span><br>
+									<del class="old-price">220,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 4 -->
+				</div>
+
+				<div class="item">
+					<!-- sp1 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/pro/giamgia/1.png" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4>Ma Sói One Night<span class="btn btn-md btn-success" >-42%</span></h4>
+							<p class="summary">
+								Bạn là một người thích chơi Ma Sói, nhưng lại không có đủ số người để chơi, hoặc không thích cảm giác bị loại trừ....
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">70,000đ</span><br>
+									<del class="old-price">120,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 1 -->
+
+					<!-- sp2 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/sp1.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4>Zuc Zac - Cùng Lắc Xí Ngầu<span class="btn btn-md btn-success" >-17%</span></h4>
+							<p class="summary">
+								Với mong muốn phổ biến board game cho nước nhà, cũng như mang những board game của người Việt ra nước ngoài, để thể...
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">150,000đ</span><br>
+									<del class="old-price">180,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thsuc sản phẩm 2 -->
+
+					<!-- sp3 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/pro/giamgia/3.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4>Exploding Kittens - Mèo Cảm Tử<span class="btn btn-md btn-success" >-20%</span></h4>
+							<p class="summary">
+								Exploding Kittens nổi lên như một hiện tượng trong vài năm qua. Chưa tính đến gameplay, nhưng về mặt marketing đây...
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">200,000đ</span><br>
+									<del class="old-price">250,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 3 -->
+
+					<!-- sp4 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/pro/giamgia/4.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4>Sushi Go! - Sushi Băng Chuyền<span class="btn btn-md btn-success" >-32%</span></h4>
+							<p class="summary">
+								Là một card game giả lập băng chuyền Sushi, Sushi Go! không thiếu những hành động “giả lập” thực tế như dùng Đũa ...
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">150,000đ</span><br>
+									<del class="old-price">220,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 4 -->
+				</div>
+
+			</div>
+		</div>
+		<!-- kết thúc ảnh -->
+		<!-- Left and right controls -->
+
+		<!-- bắt đầu làm nút trái phải -->
+		<a class="left carousel-control" href="#bar-giamgia" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#bar-giamgia" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+		<!-- kết thúc làm nút trái phải -->
+	</div>
+
+	<!-- KẾT THÚC SLIDE Giảm giá -->
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+
+
+	<!-- BẮT ĐẦU LÀM SLDIE PRODUCTS  BÁN CHẠY-->
+	<div class="container slide-product1">
+		<!-- Bắt đầu làm bar-title -->
+		<div class="bar-banchay">
+			<h3>Board game bán chạy</h3>
+			<div class="xemthem"><a href="link/bar-banchay.html">Xem thêm</a></div>
+		</div>
+		<!-- Kết thúc bar-title -->
+		<div id="bar-banchay" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#bar-banchay" data-slide-to="0" class="active"></li>
+				<li data-target="#bar-banchay" data-slide-to="1"></li>
+			</ol>
+
+			<!-- bắt đầu ảnh -->
+			<div class="carousel-inner padding-slide" role="listbox">
+				<div class="item active ">
+					<!-- sp1 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/pro/banchay/cotyphu.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4> Cờ Tỷ Phú</h4>
+							<p class="summary">
+								“Cờ tỷ phú” - không đơn giản chỉ là 1 trò chơi, khi bạn thực sự bắt đầu với nó, bạn mới thấy nó ko-hề-bình-thường-chút-nào.
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">250,000đ</span><br>
+									
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 1 -->
+
+					<!-- sp2 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/pro/banchay/2.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4>Scrabble<span class="btn btn-md btn-success" >-17%</span></h4>
+							<p class="summary">
+								Scrabble là một trong các board game kinh điển và rất nổi tiếng. Đây là một trò chơi trí tuệ giúp bạn học tiếng anh cực kỳ hiệu quả.
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">150,000đ</span><br>
+									<del class="old-price">180,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thsuc sản phẩm 2 -->
+
+					<!-- sp3 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/pro/banchay/3.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4> Love Letter Việt Hoá<span class="btn btn-md btn-success" >-38%</span></h4>
+							<p class="summary">
+								Ngày xửa ngày xưa, trong một vương quốc nọ có một nàng công chúa xinh đẹp tuyệt trần. Nàng rất tốt tụng và ...
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">75,000đ</span><br>
+									<del class="old-price">120,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 3 -->
+
+					<!-- sp4 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/pro/banchay/4.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4>Trò Chơi Khám Răng Cá Sấu <span class="btn btn-md btn-success" >-41%</span></h4>
+							<p class="summary">
+								Trò Chơi Boardgame Khám Phá Răng Cá Sấu có luật chơi đơn giản, thích hợp cho các bé từ 4 tuổi trở lên.
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">89,000đ</span><br>
+									<del class="old-price">150,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 4 -->
+				</div>
+				<!-- end 1 -->
+
+				<!-- end 2 -->
+
+				<!-- end 3 -->
+			</div>
+		</div>
+		<!-- kết thúc ảnh -->
+		<!-- Left and right controls -->
+
+		<!-- bắt đầu làm nút trái phải -->
+		<a class="left carousel-control" href="#bar-giamgia" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#bar-giamgia" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+		<!-- kết thúc làm nút trái phải -->
+	</div>
+
+	<!-- KẾT THÚC SLIDE Bán chạy -->
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+	<!-- BẮT ĐẦU LÀM SLDIE RUBIK -->
+	<div class="container slide-product1">
+		<!-- Bắt đầu làm bar-title -->
+		<div class="bar-rubik">
+			<h3>Board game rubik</h3>
+			<div class="xemthem"><a href="link/bar-rubik.html">Xem thêm</a></div>
+		</div>
+		<!-- Kết thúc bar-title -->
+		<div id="bar-rubik" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#bar-rubik" data-slide-to="0" class="active"></li>
+				<li data-target="#bar-rubik" data-slide-to="1"></li>
+				<li data-target="#bar-rubik" data-slide-to="2"></li>
+				<li data-target="#bar-rubik" data-slide-to="3"></li>
+			</ol>
+
+			<!-- bắt đầu ảnh -->
+			<div class="carousel-inner padding-slide" role="listbox">
+				<div class="item active">
+					<!-- sp1 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/pro/rubik/1.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4> Rubik 6x6x6 Speed Cube</h4>
+							<p class="summary">
+								Rubik là đồ chơi trí tuệ được giáo sư điêu khắc và kiến trúc sư người Hungary Erno Rubik sáng chế ra năm 1974 và...
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">450,000đ</span><br>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 1 -->
+
+					<!-- sp2 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/pro/rubik/2.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4>Rubik Mirror 3x3x3 Silver</h4>
+							<p class="summary">
+								Rubik Mirror của BoardgameVN là phiên bản mới với cách chơi độc đáo, không chơi theo màu mà chơi theo hình dạng...
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">190,000đ</span><br>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thsuc sản phẩm 2 -->
+
+					<!-- sp3 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/pro/rubik/3.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4>Rubik Megaminx DaYan</h4>
+							<p class="summary">
+								Biến thể 12 mặt của hãng sản xuất rubik nổi tiếng Shengshou với các sản phẩm nổi tiếng. Là lựa chọn phù hợp cho ...
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">300,000đ</span><br>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 3 -->
+
+					<!-- sp4 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/pro/rubik/4.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4>Rubik 1x3x3 Floppy</h4>
+							<p class="summary">
+								Cách chơi trò chơi này cũng rất đơn giản, người chơi chỉ cần xoay cho đến khi tất các mặt của rubik đều cùng 1 màu...
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">90,000đ</span><br>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 4 -->
+				</div>
+
+				<div class="item ">
+					<!-- sp1 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/pro/rubik/1.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4> Rubik 6x6x6 Speed Cube</h4>
+							<p class="summary">
+								Rubik là đồ chơi trí tuệ được giáo sư điêu khắc và kiến trúc sư người Hungary Erno Rubik sáng chế ra năm 1974 và...
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">450,000đ</span><br>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 1 -->
+
+					<!-- sp2 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/pro/rubik/2.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4>Rubik Mirror 3x3x3 Silver</h4>
+							<p class="summary">
+								Rubik Mirror của BoardgameVN là phiên bản mới với cách chơi độc đáo, không chơi theo màu mà chơi theo hình dạng...
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">190,000đ</span><br>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thsuc sản phẩm 2 -->
+
+					<!-- sp3 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/pro/rubik/3.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4>Rubik Megaminx DaYan</h4>
+							<p class="summary">
+								Biến thể 12 mặt của hãng sản xuất rubik nổi tiếng Shengshou với các sản phẩm nổi tiếng. Là lựa chọn phù hợp cho ...
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">300,000đ</span><br>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 3 -->
+
+					<!-- sp4 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/pro/rubik/4.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4>Rubik 1x3x3 Floppy</h4>
+							<p class="summary">
+								Cách chơi trò chơi này cũng rất đơn giản, người chơi chỉ cần xoay cho đến khi tất các mặt của rubik đều cùng 1 màu...
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">90,000đ</span><br>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 4 -->
+				</div>
+
+			</div>
+		</div>
+		<!-- kết thúc ảnh -->
+		<!-- Left and right controls -->
+
+		<!-- bắt đầu làm nút trái phải -->
+		<a class="left carousel-control" href="#bar-giamgia" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#bar-giamgia" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+		<!-- kết thúc làm nút trái phải -->
+	</div>
+
+	<!-- KẾT THÚC SLIDE RUBIK -->
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+
+
+
+	<!-- BẮT ĐẦU LÀM SLDIE COMBO -->
+	<div class="container slide-product1">
+		<!-- Bắt đầu làm bar-title -->
+		<div class="bar-combo">
+			<h3>Board game combo</h3>
+			<div class="xemthem"><a href="link/bar-combo.html">Xem thêm</a></div>
+		</div>
+		<!-- Kết thúc bar-title -->
+		<div id="bar-combo" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#bar-combo" data-slide-to="0" class="active"></li>
+				<li data-target="#bar-combo" data-slide-to="1"></li>
+			</ol>
+
+			<!-- bắt đầu ảnh -->
+			<div class="carousel-inner padding-slide" role="listbox">
+				<div class="item active">
+					<!-- sp1 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/pro/combo/1.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4>Combo BANG! &amp; ODD<span class="btn btn-md btn-success" >-19%</span></h4>
+							<p class="summary">
+								Bang là card game lấy bối cảnh nơi miền tây hoang dã, cuộc chiến giữa cái thiện và cái ác luôn diễn ra. Bạn sẽ l...
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">430,000đ</span><br>
+									<del class="old-price">530,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 1 -->
+
+					<!-- sp2 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/pro/combo/2.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4>Combo Đâm Hải Tặc + Khám Răng Cá Sấu<span class="btn btn-md btn-success" >-24%</span></h4>
+							<p class="summary">
+								Các trò chơi được săn lùng nhiều nhất quý 1 năm 2016. Tổng thiệt hại khi mua lẻ là 300k nhưng khi mua cùng lúc...
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">230,000đ</span><br>
+									<del class="old-price">300,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thsuc sản phẩm 2 -->
+
+					<!-- sp3 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/pro/combo/3.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4>Combo Jungle Speed &amp; Twister Body<span class="btn btn-md btn-success" >-18%</span></h4>
+							<p class="summary">
+								Twister Body gồm 2 phần là tấm thảm twister moves và biểu đồ quay. Khi các bạn quay vào ô nào thì sẽ để tay hoặc...
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">240,000đ</span><br>
+									<del class="old-price">290,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 3 -->
+
+					<!-- sp4 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/pro/combo/4.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4>Combo Uno dày &amp; Domino Đen Cao Cấp<span class="btn btn-md btn-success" >-2%</span></h4>
+							<p class="summary">
+								Combo 1 vé trở về tuổi thơ bao gồm 2 sản phẩm Hot nhất hiện nay: Domino và Uno dày. Khi mua Combo bạn đã tiết...
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">150,000đ</span><br>
+									<del class="old-price">190,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 4 -->
+				</div>
+
+				<div class="item ">
+					<!-- sp1 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/pro/combo/1.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4>Combo BANG! &amp; ODD<span class="btn btn-md btn-success" >-19%</span></h4>
+							<p class="summary">
+								Bang là card game lấy bối cảnh nơi miền tây hoang dã, cuộc chiến giữa cái thiện và cái ác luôn diễn ra. Bạn sẽ l...
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">430,000đ</span><br>
+									<del class="old-price">530,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 1 -->
+
+					<!-- sp2 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/pro/combo/2.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4>Combo Đâm Hải Tặc + Khám Răng Cá Sấu<span class="btn btn-md btn-success" >-24%</span></h4>
+							<p class="summary">
+								Các trò chơi được săn lùng nhiều nhất quý 1 năm 2016. Tổng thiệt hại khi mua lẻ là 300k nhưng khi mua cùng lúc...
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">230,000đ</span><br>
+									<del class="old-price">300,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thsuc sản phẩm 2 -->
+
+					<!-- sp3 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/pro/combo/3.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4>Combo Jungle Speed &amp; Twister Body<span class="btn btn-md btn-success" >-18%</span></h4>
+							<p class="summary">
+								Twister Body gồm 2 phần là tấm thảm twister moves và biểu đồ quay. Khi các bạn quay vào ô nào thì sẽ để tay hoặc...
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">240,000đ</span><br>
+									<del class="old-price">290,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 3 -->
+
+					<!-- sp4 ---------->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 product-inline-img">
+						<div>
+							<img class="well" src="img/pro/combo/4.jpg" alt="Chania">
+						</div>
+						<div class="info-product">
+							<h4>Combo Uno dày &amp; Domino Đen Cao Cấp<span class="btn btn-md btn-success" >-2%</span></h4>
+							<p class="summary">
+								Combo 1 vé trở về tuổi thơ bao gồm 2 sản phẩm Hot nhất hiện nay: Domino và Uno dày. Khi mua Combo bạn đã tiết...
+							</p>
+							<div>
+								<p class="p-wid1">
+									<span class="new-price">150,000đ</span><br>
+									<del class="old-price">190,000đ</del>
+								</p>
+								<p class="p-wid2 iconshop">
+									<button type="button" class="btn">
+										<h3>
+											<a href="">
+												<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+											</a>
+										</h3>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- kết thúc sản phẩm 4 -->
+				</div>
+
+			</div>
+		</div>
+		<!-- kết thúc ảnh -->
+		<!-- Left and right controls -->
+
+		<!-- bắt đầu làm nút trái phải -->
+		<a class="left carousel-control" href="#bar-giamgia" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#bar-giamgia" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+		<!-- kết thúc làm nút trái phải -->
+	</div>
+	<!-- KẾT THÚC SLIDE COMBO -->
+	
+
+
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+	<!-- --------- --><!-- -------------------------- -->
+	<!-- footer -->
+
+
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- Bắt đầu tin lức -->
+	<div class="container news">
+		<div class="bar-giamgia">
+			<h3>Board game Hot</h3>
+			<div class="xemthem"><a href="link/bar-giamgia.html">Xem thêm</a></div>
+		</div>
+		<!-- Bắt đầu Banner ads-->
+		<div class="banner-ads">
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+				<a href=""><img class="thumbnail" src="img/banner-ads1.jpg" alt="" style="width: 100%;"></a>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+				<a href=""><img class="thumbnail" src="img/banner-ads2.jpg" alt="" style="width: 100%;"></a>
+			</div>
+		</div>
+		<!-- Kết thúc banner ads -->
+	</div>
+	<!-- kết thúc tin tức -->
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<div class="container slide-company">
+		<div class="bar-doitac">
+			<h3>Đối tác của Board Game</h3>
+		</div>
+		<div id="mycompany" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#mycompany" data-slide-to="0" class="active"></li>
+				<li data-target="#mycompany" data-slide-to="1"></li>
+			</ol>
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner slide-mycompany" role="listbox">
+
+				<div class="item active">
+					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 product-inline-img">
+						<img src="img/c1.jpg" alt="" class="thumbnail img-responsive">
+					</div>
+					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 product-inline-img">
+						<img src="img/c2.jpg" alt="" class="thumbnail img-responsive">
+					</div>
+					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 product-inline-img">
+						<img src="img/c3.jpg" alt="" class="thumbnail img-responsive">
+					</div>
+					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 product-inline-img">
+						<img src="img/c9.jpg" alt="" class="thumbnail img-responsive">
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 product-inline-img">
+						<img src="img/c5.jpg" alt="" class="thumbnail img-responsive">
+					</div>
+					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 product-inline-img">
+						<img src="img/c1.jpg" alt="" class="thumbnail img-responsive">
+					</div>
+					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 product-inline-img">
+						<img src="img/c2.jpg" alt="" class="thumbnail img-responsive">
+					</div>
+					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 product-inline-img">
+						<img src="img/c8.png" alt="" class="thumbnail img-responsive">
+					</div>
+				</div>
+			</div>
+
+			<!-- Left and right controls -->
+			<a class="left carousel-control company-left" href="#mycompany" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control company-left" href="#mycompany" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
+
+	<!-- footer  -->
+	<div class="clear-everything"></div>
+	<div class="container-fuild foot">
+		<div class="container">
+			<div class="footer" style="overflow-y:hidden;">
+				<!-- bắt đầu chia làm 2-cột màn hình nhỏ và 4 cột màn hình to -->
+				<div class="bot">
+					<!-- bắt đầu hỗ trợ bán hàng -->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg3">
+						<div class="hotrobanhang">
+							<h4>hỗ trợ bán hàng</h4>
+							<ul>
+								<li><a href="">điều khoản sử dụng</a></li>
+								<li><a href="">hướng dẫn mua hàng</a></li>
+								<li><a href="">phương thức thanh toán</a></li>
+								<li><a href="">phương thức vận chuyển</a></li>
+								<li><a href="">chính sách đổi trả hàng</a></li>
+								<li><a href="">câu hỏi thường gặp</a></li>
+								<li><a href="">chính sách bảo mật thông tin</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- kết thúc hỗ trợ bán hàng -->
+					<!-- -------- -->
+					<!-- bắt đầu thông tin về stoys -->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg3">
+						<div class="thongtinstoy">
+							<h4>thông tin Board Game </h4>
+							<ul>
+								<li><a href="">giới thiệu Board Game </a></li>
+								<li><a href="">liên hệ</a></li>
+								<li><a href="">customer service </a></li>
+								<li><a href="">site map</a></li>
+								<li><a href="">search term </a></li>
+								<li><a href="">advanced search </a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- kết thúc thông tin về stoys -->
+					<!-- -------- -->
+					<!-- bắt đầu kết nối với stoys -->
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg3">
+						<div class="ketnoivoistoy">
+							<h4>kết nối với Board Game </h4>
+							<ul>
+								<li><a href=""><span></span> facebook</a></li>
+								<li><a href=""><span></span> twitter</a></li>
+								<li><a href=""><span></span> google plus</a></li>
+								<li><a href=""><span></span> flick</a></li>
+								<li><a href=""><span></span> rss feed</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- kết thúc kết nối với stoys -->
+					<!-- -------- -->
+					<!-- bắt đàu hệ thống cửa hàng -->		
+					<div class="col-xs-6 col-sm-6 col-md-3 col-lg3">
+						<div class="hethongcuahang">
+							<h4>hệ thống cửa hàng Board Game và bé</h4>
+							<dl>
+								<dt>Board Game  hà nội</dt>
+								<dd>- 14/4 nguyễn đình chiểu</dd>
+								<dd>- phòng 69 tầng 96 - e</dd>
+								<dt>Board Game  đà nẵng</dt>
+								<dd>- nhà abc - tòa xyz - đường lmn</dd>
+								<dt>Board Game  hồ chí minh</dt>
+								<dd>- rẽ phải - rẽ trái - rồi rẽ phải là đến</dd>
+							</dl>
+						</div>
+					</div>
+					<!-- kết thúc hệ thống cửa hàng -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END footer -->
+
+
+
+
+
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- --------- --><!-- -------------------------- -->
+
+	<!-- END body product -->
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+
+
+
+
+
+
+
+
+
+
+	<script>
+		$(document).ready(function(){
+			$('[data-toggle="tooltip"]').tooltip();
+		});
+	</script>
+
+</body>
+</html>	

@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width; initial-scale =1 ">
+	<title>Danh Mục Sản Phẩm</title>
+
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	
+	<!-- animateCSS + style.css-->
+	<!-- <link rel="stylesheet" href="css/animate.css" type="text/css"> -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	
+
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- bắt đầu  - top -->
+	<div class="container-fuild">
+		<!-- bắt đầu làm logo-top và khung sign in tìm kiém -->
+		<div class="logo-top">
+			<div class="container">
+				<!-- start logo -->
+				<div class="logo-header col-xs-6 col-sm-6 col-md-6 col-lg-6">
+					<a href="index.html">
+						<img width="88" height="86" id="logo_pc" src="img/logo.png" alt="boardgame.vn">
+						<span class="sologan">BoardgameVN</span>
+					</a>
+				</div>
+				<!-- end logo -->
+				<!-- start tim kiem -->
+				<div class="login-header col-xs-6 col-sm-6 col-md-6 col-lg-6">
+					<form role="form">
+						<div class="form-group">
+							<div class="search-bar">
+								<input type="password" class="form-control" id="pwd" placeholder="Tìm kiếm">
+								<a href="" class="btn btn-info"><span class="glyphicon glyphicon-search"></span> </a>
+							</div>
+						</div>
+					</form>
+				</div>
+				<!-- end tim kiem -->
+
+			</div>
+			
+		</div>
+		<!-- end logo top và khung sign in tìm kiếm -->
+		<!-- ----------------------------------- -->
+		<!-- Bắt đầu làm menu chính  -->
+		<nav class="navbar-inverse menu-top">
+			<div class="container">
+				<div class="navbar-header"><!-- để cho submenu bằng width vs cái trên nó -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<!-- navbar-toggle để cho cái icon float-right và hiện là 1 icon, collapse để nhấn vào nó hiện ra submenu và đóng submenu -->
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">
+						<span class="sologan">BoardgameVN</span>
+					</a>
+
+				</div>
+
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav active">
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Danh sách sản phẩm <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li class="bg-li"><a href="#"> Board Game mới nhập</a></li>
+								<li><a href="#"> Board Game giảm giá</a></li>
+								<li><a href="#"> Rubik</a></li>
+								<li><a href="#"> Board Game bán chạy</a></li>
+								<li><a href="#"> Board Game theo tuổi</a></li>
+								<li><a href="#"> Board Game nam/nữ</a></li>
+								<li><a href="#"> Board Game giải trí nhóm</a></li>
+								<li><a href="#"> Combo Khuyến Mãi</a></li>
+								<li><a href="#"> Board Game gia đình</a></li>
+								<li><a href="#" class="giohang"> Giỏ hàng</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Tin Tức</a></li>
+						<li><a href="#">Liên Hệ</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a data-toggle="modal" href="#login"><span class="glyphicon glyphicon-user"></span> Đăng Nhập</a>
+						</li>
+						<li>
+							<a href="#resign" data-toggle="modal"><span class="glyphicon glyphicon-log-in"></span> Đăng kí</a>
+						</li>
+					</ul>
+					<!-- bắt đầu MODEL đăng kí-đăng nhập -->
+					<div class="dangki-dangnhap">
+						<!-- Modal box dang nhap -->
+						<div class="modal fade" id="login" role="dialog">
+							<div class="modal-dialog">
+								<!-- Modal content-->
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title" style="color:#BE3841;font-size:23px;">Đăng Nhập</h4>
+									</div>
+									<div class="modal-body">
+										<form role="form">
+											<div class="form-group">
+												<label for="email">Email:</label>
+												<input type="email" class="form-control" id="email" placeholder="Enter email">
+											</div>
+											<div class="form-group">
+												<label for="pwd">Password:</label>
+												<input type="password" class="form-control" id="pwd" placeholder="Enter password">
+											</div>
+											<div class="checkbox">
+												<label style="color:#BE3841"><input type="checkbox" > Ghi nhớ</label>
+											</div>
+											<button type="submit" class="btn btn-default">Submit</button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End box đăng nhập -->
+						<!-- Modal box dang kí -->
+						<div class="modal fade" id="resign" role="dialog">
+							<div class="modal-dialog">
+								<!-- Modal content-->
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title" style="color:#BE3841;font-size:23px;">Đăng Kí</h4>
+									</div>
+									<div class="modal-body">
+										<form role="form">
+											<div class="form-group">
+												<label for="email">Email:</label>
+												<input type="email" class="form-control" id="email" placeholder="Enter email">
+											</div>
+											<div class="form-group">
+												<label for="pwd">Password:</label>
+												<input type="password" class="form-control" id="pwd" placeholder="Enter password"><br>
+												<label for="pwd">Repeat Password:</label>
+												<input type="password" class="form-control" id="pwd" placeholder="Repeat password">
+											</div>
+											<button type="submit" class="btn btn-default">Submit</button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End box đăng kí -->
+					</div>
+					<!-- Kết thúc MODEL đăng kí-đăng nhập -->
+				</div>
+			</div>
+		</nav>		<!-- end menu chính -->
+		<!-- ----------------------------------- -->
+
+
+		<!-- bắt đầu làm slide -->
+		<div class="slide-top">
+			<!-- bắt đầu slide top-->
+			<div class="slide-top">
+				<div id="mycompany" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#mycompany" data-slide-to="0" class="active"></li>
+						<li data-target="#mycompany" data-slide-to="1"></li>
+						<li data-target="#mycompany" data-slide-to="2"></li>
+						<li data-target="#mycompany" data-slide-to="3"></li>
+					</ol>
+
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						<div class="item item-company active" >
+							<a>	<img class="img1" src="img/slidetop1.png" alt="1"></a>
+						</div>
+						<div class="item item-company">
+							<a><img src="img/slidetop2.jpg" alt="2"></a>
+						</div>
+						<div class="item item-company">
+							<a><img src="img/slidetop3.jpg" alt="3"></a>
+						</div>	
+						<div class="item item-company">
+							<a><img src="img/slidetop4.jpg" alt="4"></a>
+						</div>	
+						<div class="item item-company">
+							<a><img src="img/slidetop5.png" alt="5"></a>
+						</div>						
+					</div>
+
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#mycompany" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#mycompany" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+			<!-- End Slide top -->
+		</div>
+		<!-- end slide -->
+	</div>
+	<!-- end  - top -->
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+	<!-- -------------------------- -->
+
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- bắt đầu SHIPPING -->
+	<div class="container shipping-part">
+		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 giaohang">
+			<h4>giao hàng toàn quốc</h4>
+			<p>Hỗ trợ 63 tình thành trên toàn quốc</p>
+			<span><a href="">Xem thêm</a></span>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 thanhtoan">
+			<h4>THANH TOÁN DỄ DÀNG</h4>
+			<p>Chuyển khoản ngân hàng hoặc thanh toán khi nhận hàng</p>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 uudai">
+			<h4>ƯU ĐÃI MUA NHÓM</h4>
+			<p>Dành cho các quán cafe hay trường học có nhu cầu</p>
+			<span><a href="">Xem thêm</a></span>
+		</div>
+	</div>	
+	<!-- END SHIPPING -->
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+
+	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+	<!-- Body product -->
+	
+
+	<!-- Bắt đầu danh sách sản phẩm -->
+	<div class="container danhsachsanpham">
+		<div class="hidden-xs hidden-sm col-md-3 col-lg3 filter-bar">
+			<!-- mucmenu------------------------------------- -->
+			<div class="panel-group" id="filter-bar">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#filter-bar" href="#muc1">Giới tính</a>
+						</h4>
+					</div>
+					<div id="muc1" class="panel-collapse  in">
+						<div class="panel-body">
+							<form action="">
+								<input type="checkbox" name="gender" value="trai"> Bé trai<br> 
+								<input type="checkbox" name="gender" value="gai"> Bé gái<br>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#filter-bar" href="#muc2">Độ Tuổi</a>
+						</h4>
+					</div>
+					<div id="muc2" class="panel-collapse  in">
+						<div class="panel-body">
+							<form action="">
+								<input type="checkbox" name="tuoi" value="1"> Dưới 1 tuổi <br> 
+								<input type="checkbox" name="tuoi" value="12"> 1-2 Tuổi<br>
+								<input type="checkbox" name="tuoi" value="24"> 2-4 Tuổi <br> 
+								<input type="checkbox" name="tuoi" value="48"> 4-8 Tuổi<br>
+								<input type="checkbox" name="tuoi" value="810"> 8-10 Tuổi<br> 
+								<input type="checkbox" name="tuoi" value="1013"> 10-13 Tuổi<br>
+								<input type="checkbox" name="tuoi" value="1316"> 13-16 Tuổi<br> 
+								<input type="checkbox" name="tuoi" value="16+"> 16+<br>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#filter-bar" href="#muc3">Giá Tiền</a>
+						</h4>
+					</div>
+					<div id="muc3" class="panel-collapse in">
+						<div class="panel-body">
+							<form action="">
+								<input type="checkbox" name="giatien" value="100"> Dưới 100,000 đ<br> 
+								<input type="checkbox" name="giatien" value="100-199"> 100,000đ - 199,000đ<br>
+								<input type="checkbox" name="giatien" value="200-499"> 200,000 - 499,000đ <br> 
+								<input type="checkbox" name="giatien" value="500-999"> 500,000đ - 999,000đ<br>
+								<input type="checkbox" name="giatien" value="10000"> Trên 1,000,000đ<br> 
+
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end muc menu ------------------------------- -->
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 list-bar">
+			<div class="sapxep-hienthisanpham">
+				<div class="menu-bread">
+					<ol class="breadcrumb" style="margin-bottom: 5px;">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Library</a></li>
+						<li class="active">Data</li>
+					</ol>
+				</div>
+				<div class="order-categories">
+					<h3>Sắp xếp theo: </h3>
+					<select class="btn btn-lg">
+						<option value="1">Yêu thích</option>
+						<option value="5">Sản phẩm mới</option>
+						<option value="2">Sản phẩm bán chạy</option>
+						<option value="3">Giá tăng dần</option>
+						<option value="4">Giá giảm dần</option>
+					</select>
+					<div class="clear-everything"></div>
+				</div>
+				<div class="hienthi">
+					<span class="hienthi-left">
+						Hiển thị:
+						<select class="hienthi-select" name="hienthi" id="hienthi">
+
+							<option value="1">10 kết quả</option>
+							<option value="2">20 kết quả</option>
+							<option value="3">30 kết quả</option>
+							<option value="4">40 kết quả</option>
+						</select>
+					</span>
+					<ul class="pagination pagination-lg hienthi-right">
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+					</ul>
+					<div class="clear-everything"></div>
+				</div>
+			</div>
+
+			<!-- ảnh sản phẩm và thông tin -->
+			<div class="cacsanphamduochienthi">
+				<!-- DANH MỤC SẢN PHẨM -->
+				<!-- sp1 ---------->
+				<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 product-inline-img">
+					<div>
+						<img class="well" src="img/giamgia/masoi/1.jpg" alt="Chania">
+					</div>
+					<div class="info-product">
+						<h4>Ma Sói - Characters<span class="btn btn-md btn-success" >-30%</span></h4>
+						<p class="summary">
+							Bạn là một người thích chơi Ma Sói, nhưng lại không có đủ số người để chơi...
+						</p>
+						<div>
+							<p class="p-wid1">
+								<span class="new-price">100,000đ</span><br>
+								<del class="old-price">150,000đ</del>
+							</p>
+							<p class="p-wid2 iconshop">
+								<button type="button" class="btn">
+									<h3>
+										<a href="">
+											<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+										</a>
+									</h3>
+								</button>
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- kết thúc sản phẩm 1 -->
+
+				<!-- sp2 ---------->
+				<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 product-inline-img">
+					<div>
+						<img class="well" src="img/sp1.jpg" alt="Chania">
+					</div>
+					<div class="info-product">
+						<h4>Zuc Zac - Cùng Lắc Xí Ngầu<span class="btn btn-md btn-success" >-17%</span></h4>
+						<p class="summary">
+							Với mong muốn phổ biến board game cho nước nhà, cũng như mang...
+						</p>
+						<div>
+							<p class="p-wid1">
+								<span class="new-price">150,000đ</span><br>
+								<del class="old-price">180,000đ</del>
+							</p>
+							<p class="p-wid2 iconshop">
+								<button type="button" class="btn">
+									<h3>
+										<a href="">
+											<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+										</a>
+									</h3>
+								</button>
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- kết thsuc sản phẩm 2 -->
+
+				<!-- sp3 ---------->
+				<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 product-inline-img">
+					<div>
+						<img class="well" src="img/pro/giamgia/3.jpg" alt="Chania">
+					</div>
+					<div class="info-product">
+						<h4>Exploding Kittens - Mèo Cảm Tử<span class="btn btn-md btn-success" >-20%</span></h4>
+						<p class="summary">
+							Exploding Kittens nổi lên như một hiện tượng trong vài năm qua. ...
+						</p>
+						<div>
+							<p class="p-wid1">
+								<span class="new-price">200,000đ</span><br>
+								<del class="old-price">250,000đ</del>
+							</p>
+							<p class="p-wid2 iconshop">
+								<button type="button" class="btn">
+									<h3>
+										<a href="">
+											<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+										</a>
+									</h3>
+								</button>
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- kết thúc sản phẩm 3 -->
+
+				<!-- sp4 ---------->
+				<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 product-inline-img">
+					<div>
+						<img class="well" src="img/pro/giamgia/4.jpg" alt="Chania">
+					</div>
+					<div class="info-product">
+						<h4>Sushi Go! - Sushi Băng Chuyền<span class="btn btn-md btn-success" >-32%</span></h4>
+						<p class="summary">
+							Là một card game giả lập băng chuyền Sushi, Sushi Go! không thiếu...
+						</p>
+						<div>
+							<p class="p-wid1">
+								<span class="new-price">150,000đ</span><br>
+								<del class="old-price">220,000đ</del>
+							</p>
+							<p class="p-wid2 iconshop">
+								<button type="button" class="btn">
+									<h3>
+										<a href="">
+											<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+										</a>
+									</h3>
+								</button>
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- kết thúc sản phẩm 4 -->
+				<!-- ----------------------------- -->
+
+
+				<!-- sp1 ---------->
+				<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 product-inline-img">
+					<div>
+						<img class="well" src="img/pro/banchay/cotyphu.jpg" alt="Chania">
+					</div>
+					<div class="info-product">
+						<h4> Cờ Tỷ Phú</h4>
+						<p class="summary">
+							“Cờ tỷ phú” - không đơn giản chỉ là 1 trò chơi, khi bạn thực sự bắt đầu với nó, bạn mới thấy nó ko-hề-bình-thường-chút-nào.
+						</p>
+						<div>
+							<p class="p-wid1">
+								<span class="new-price">250,000đ</span><br>
+
+							</p>
+							<p class="p-wid2 iconshop">
+								<button type="button" class="btn">
+									<h3>
+										<a href="">
+											<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+										</a>
+									</h3>
+								</button>
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- kết thúc sản phẩm 1 -->
+
+				<!-- sp2 ---------->
+				<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 product-inline-img">
+					<div>
+						<img class="well" src="img/pro/banchay/2.jpg" alt="Chania">
+					</div>
+					<div class="info-product">
+						<h4>Scrabble<span class="btn btn-md btn-success" >-17%</span></h4>
+						<p class="summary">
+							Scrabble là một trong các board game kinh điển và rất nổi tiếng. Đây là một trò chơi trí tuệ giúp bạn học tiếng anh cực kỳ hiệu quả.
+						</p>
+						<div>
+							<p class="p-wid1">
+								<span class="new-price">150,000đ</span><br>
+								<del class="old-price">180,000đ</del>
+							</p>
+							<p class="p-wid2 iconshop">
+								<button type="button" class="btn">
+									<h3>
+										<a href="">
+											<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+										</a>
+									</h3>
+								</button>
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- kết thsuc sản phẩm 2 -->
+
+				<!-- sp3 ---------->
+				<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 product-inline-img">
+					<div>
+						<img class="well" src="img/pro/banchay/3.jpg" alt="Chania">
+					</div>
+					<div class="info-product">
+						<h4> Love Letter Việt Hoá<span class="btn btn-md btn-success" >-38%</span></h4>
+						<p class="summary">
+							Ngày xửa ngày xưa, trong một vương quốc nọ có một nàng công chúa xinh đẹp tuyệt trần. Nàng rất tốt tụng và ...
+						</p>
+						<div>
+							<p class="p-wid1">
+								<span class="new-price">75,000đ</span><br>
+								<del class="old-price">120,000đ</del>
+							</p>
+							<p class="p-wid2 iconshop">
+								<button type="button" class="btn">
+									<h3>
+										<a href="">
+											<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+										</a>
+									</h3>
+								</button>
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- kết thúc sản phẩm 3 -->
+
+				<!-- sp4 ---------->
+				<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 product-inline-img">
+					<div>
+						<img class="well" src="img/pro/banchay/4.jpg" alt="Chania">
+					</div>
+					<div class="info-product">
+						<h4>Trò Chơi Khám Răng Cá Sấu <span class="btn btn-md btn-success" >-41%</span></h4>
+						<p class="summary">
+							Trò Chơi Boardgame Khám Phá Răng Cá Sấu có luật chơi đơn giản, thích hợp cho các bé từ 4 tuổi trở lên.
+						</p>
+						<div>
+							<p class="p-wid1">
+								<span class="new-price">89,000đ</span><br>
+								<del class="old-price">150,000đ</del>
+							</p>
+							<p class="p-wid2 iconshop">
+								<button type="button" class="btn">
+									<h3>
+										<a href="">
+											<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+										</a>
+									</h3>
+								</button>
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- kết thúc sản phẩm 4 -->
+				<!-- sp1 ---------->
+				<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 product-inline-img">
+					<div>
+						<img class="well" src="img/giamgia/masoi/1.jpg" alt="Chania">
+					</div>
+					<div class="info-product">
+						<h4>Ma Sói - Characters<span class="btn btn-md btn-success" >-30%</span></h4>
+						<p class="summary">
+							Bạn là một người thích chơi Ma Sói, nhưng lại không có đủ số người để chơi...
+						</p>
+						<div>
+							<p class="p-wid1">
+								<span class="new-price">100,000đ</span><br>
+								<del class="old-price">150,000đ</del>
+							</p>
+							<p class="p-wid2 iconshop">
+								<button type="button" class="btn">
+									<h3>
+										<a href="">
+											<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+										</a>
+									</h3>
+								</button>
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- kết thúc sản phẩm 1 -->
+
+				<!-- sp2 ---------->
+				<div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 product-inline-img">
+					<div>
+						<img class="well" src="img/sp1.jpg" alt="Chania">
+					</div>
+					<div class="info-product">
+						<h4>Zuc Zac - Cùng Lắc Xí Ngầu<span class="btn btn-md btn-success" >-17%</span></h4>
+						<p class="summary">
+							Với mong muốn phổ biến board game cho nước nhà, cũng như mang...
+						</p>
+						<div>
+							<p class="p-wid1">
+								<span class="new-price">150,000đ</span><br>
+								<del class="old-price">180,000đ</del>
+							</p>
+							<p class="p-wid2 iconshop">
+								<button type="button" class="btn">
+									<h3>
+										<a href="">
+											<span class="glyphicon glyphicon-shopping-cart"> Mua Ngay</span>
+										</a>
+									</h3>
+								</button>
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- kết thsuc sản phẩm 2 -->
+			</div>
+			<!-- chọn trang -->
+
+			<div class="clear-everything"></div>
+			<hr style="border:1px solid black;">
+			<div class="hienthi1">
+				<span class="hienthi-left">
+					Hiển thị: 10 / 155 kết quả tìm được!
+				</span>
+				<ul class="pagination pagination-lg hienthi-right">
+					<li class="active"><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+				</ul>
+				<div class="clear-everything"></div>
+			</div>
+			<!-- end chọn trang -->
+		</div>
+		<!-- end ảnh sản phẩm và thông tin -->
+
+
+
+		<!-- END DANH MỤC SẢN PHẨM -->
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+<!-- --------- --><!-- -------------------------- -->
+<!-- footer -->
+
+
+<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+<div class="container slide-company">
+	<div class="bar-doitac">
+		<h3>Đối tác của Board Game</h3>
+	</div>
+	<div id="mycompany" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#mycompany" data-slide-to="0" class="active"></li>
+			<li data-target="#mycompany" data-slide-to="1"></li>
+		</ol>
+
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner slide-mycompany" role="listbox">
+
+			<div class="item active">
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 product-inline-img">
+					<img src="img/c1.jpg" alt="" class="thumbnail img-responsive">
+				</div>
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 product-inline-img">
+					<img src="img/c2.jpg" alt="" class="thumbnail img-responsive">
+				</div>
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 product-inline-img">
+					<img src="img/c3.jpg" alt="" class="thumbnail img-responsive">
+				</div>
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 product-inline-img">
+					<img src="img/c9.jpg" alt="" class="thumbnail img-responsive">
+				</div>
+			</div>
+
+			<div class="item">
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 product-inline-img">
+					<img src="img/c5.jpg" alt="" class="thumbnail img-responsive">
+				</div>
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 product-inline-img">
+					<img src="img/c1.jpg" alt="" class="thumbnail img-responsive">
+				</div>
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 product-inline-img">
+					<img src="img/c2.jpg" alt="" class="thumbnail img-responsive">
+				</div>
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 product-inline-img">
+					<img src="img/c8.png" alt="" class="thumbnail img-responsive">
+				</div>
+			</div>
+		</div>
+
+		<!-- Left and right controls -->
+		<a class="left carousel-control company-left" href="#mycompany" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control company-left" href="#mycompany" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+</div>
+
+<!-- footer  -->
+<div class="clear-everything"></div>
+<div class="container-fuild foot">
+	<div class="container">
+		<div class="footer" style="overflow-y:hidden;">
+			<!-- bắt đầu chia làm 2-cột màn hình nhỏ và 4 cột màn hình to -->
+			<div class="bot">
+				<!-- bắt đầu hỗ trợ bán hàng -->
+				<div class="col-xs-6 col-sm-6 col-md-3 col-lg3">
+					<div class="hotrobanhang">
+						<h4>hỗ trợ bán hàng</h4>
+						<ul>
+							<li><a href="">điều khoản sử dụng</a></li>
+							<li><a href="">hướng dẫn mua hàng</a></li>
+							<li><a href="">phương thức thanh toán</a></li>
+							<li><a href="">phương thức vận chuyển</a></li>
+							<li><a href="">chính sách đổi trả hàng</a></li>
+							<li><a href="">câu hỏi thường gặp</a></li>
+							<li><a href="">chính sách bảo mật thông tin</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- kết thúc hỗ trợ bán hàng -->
+				<!-- -------- -->
+				<!-- bắt đầu thông tin về stoys -->
+				<div class="col-xs-6 col-sm-6 col-md-3 col-lg3">
+					<div class="thongtinstoy">
+						<h4>thông tin Board Game </h4>
+						<ul>
+							<li><a href="">giới thiệu Board Game </a></li>
+							<li><a href="">liên hệ</a></li>
+							<li><a href="">customer service </a></li>
+							<li><a href="">site map</a></li>
+							<li><a href="">search term </a></li>
+							<li><a href="">advanced search </a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- kết thúc thông tin về stoys -->
+				<!-- -------- -->
+				<!-- bắt đầu kết nối với stoys -->
+				<div class="col-xs-6 col-sm-6 col-md-3 col-lg3">
+					<div class="ketnoivoistoy">
+						<h4>kết nối với Board Game </h4>
+						<ul>
+							<li><a href=""><span></span> facebook</a></li>
+							<li><a href=""><span></span> twitter</a></li>
+							<li><a href=""><span></span> google plus</a></li>
+							<li><a href=""><span></span> flick</a></li>
+							<li><a href=""><span></span> rss feed</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- kết thúc kết nối với stoys -->
+				<!-- -------- -->
+				<!-- bắt đàu hệ thống cửa hàng -->		
+				<div class="col-xs-6 col-sm-6 col-md-3 col-lg3">
+					<div class="hethongcuahang">
+						<h4>hệ thống cửa hàng Board Game và bé</h4>
+						<dl>
+							<dt>Board Game  hà nội</dt>
+							<dd>- 14/4 nguyễn đình chiểu</dd>
+							<dd>- phòng 69 tầng 96 - e</dd>
+							<dt>Board Game  đà nẵng</dt>
+							<dd>- nhà abc - tòa xyz - đường lmn</dd>
+							<dt>Board Game  hồ chí minh</dt>
+							<dd>- rẽ phải - rẽ trái - rồi rẽ phải là đến</dd>
+						</dl>
+					</div>
+				</div>
+				<!-- kết thúc hệ thống cửa hàng -->
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END footer -->
+
+
+
+
+
+<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->	<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+<!-- --------- --><!-- -------------------------- -->
+
+<!-- END body product -->
+<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+
+
+
+
+
+
+
+
+
+
+<script>
+	$(document).ready(function(){
+		$('[data-toggle="tooltip"]').tooltip();
+	});
+</script>
+
+</body>
+</html>	
