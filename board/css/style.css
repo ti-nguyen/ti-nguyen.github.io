@@ -381,6 +381,8 @@ width: 100% !important;
 	text-align: justify;
 	height: 60px;
 	margin-bottom: 30px;
+	text-overflow: ellipsis;
+	overflow: hidden;
 
 }
 .new-price{
